@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UzAuto Motors — Официальный дилер Chevrolet в Узбекистане | Каталог и Цены 2026</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        uzBlue: '#003B8E',
+                        uzBlueLight: '#0056D2',
+                        chevyGold: '#D49A2A',
+                        chevyGoldLight: '#F3B844',
+                        redline: '#E11D48'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Clean Official Automotive Dealership Styling */
+        :root {
+            --bg-main: #F8FAFC;
+            --bg-surface: #FFFFFF;
+            --bg-subtle: #F1F5F9;
+            --text-main: #0F172A;
+            --text-muted: #475569;
+            --border-color: #E2E8F0;
+        }
+
+        html.dark {
+            --bg-main: #0B0F17;
+            --bg-surface: #131B2E;
+            --bg-subtle: #1E293B;
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            overflow-x: hidden;
+        }
+
+        .dealer-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        html.dark .dealer-card {
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.4);
+        }
+
+        .dealer-card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 35px -10px rgba(0, 59, 142, 0.14);
+            border-color: rgba(0, 86, 210, 0.35);
+        }
+
+        /* Realistic Car Image Hover & Color Paint Filter */
+        .car-photo-zoom {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.45s ease;
+        }
+
+        .group:hover .car-photo-zoom {
+            transform: scale(1.05);
+        }
+
+        /* Realistic Headlight Flare Overlay on Real Photos */
+        .headlight-flare-overlay {
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            pointer-events: none;
+        }
+
+        .headlights-on .headlight-flare-overlay {
+            opacity: 1;
+        }
+
+        /* Engine Running Vibration Effect on Hero Photo */
+        @keyframes subtleEngineRumble {
+            0%, 100% { transform: translateY(0) scale(1); }
+            25% { transform: translateY(-1px) scale(1.001); }
+            50% { transform: translateY(0.8px) scale(1); }
+            75% { transform: translateY(-0.6px) scale(1.001); }
+        }
+
+        @keyframes revVibration {
+            0%, 100% { transform: translateY(0) scale(1.01); }
+            25% { transform: translateY(-2.5px) rotate(-0.15deg) scale(1.012); }
+            50% { transform: translateY(2px) rotate(0.15deg) scale(1.012); }
+            75% { transform: translateY(-2px) rotate(-0.1deg) scale(1.01); }
+        }
+
+        .engine-idle-photo {
+            animation: subtleEngineRumble 0.14s infinite ease-in-out;
+        }
+
+        .engine-rev-photo {
+            animation: revVibration 0.08s infinite ease-in-out !important;
+        }
+
+        /* Custom Range Sliders */
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 7px;
+            background: #CBD5E1;
+            border-radius: 999px;
+            outline: none;
+        }
+
+        html.dark input[type="range"] {
+            background: #334155;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #003B8E;
+            border: 3px solid #FFFFFF;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 59, 142, 0.45);
+            transition: transform 0.15s ease, background-color 0.15s ease;
+        }
+
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.15);
+            background: #0056D2;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-uzBlue selection:text-white">
+
+    <!-- TOP OFFICIAL DEALERSHIP BAR -->
+    <div class="bg-slate-900 text-slate-200 text-xs py-2.5 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-3">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded bg-chevyGold text-slate-950 font-bold uppercase tracking-wider text-[11px]">
+                    <i class="fa-solid fa-shield-check"></i> Официальный дилер
+                </span>
+                <span class="font-medium">АО «UzAuto Motors» — Автомобили Chevrolet 2026 года с заводской гарантией 3 года или 100 000 км</span>
+            </div>
+            <div class="hidden lg:flex items-center gap-6 text-slate-300">
+                <span class="flex items-center gap-1.5">
+                    <i class="fa-solid fa-location-dot text-chevyGold"></i> г. Ташкент и все регионы РУз (85 автосалонов)
+                </span>
+                <a href="tel:+998781417777" class="flex items-center gap-1.5 hover:text-white font-semibold transition">
+                    <i class="fa-solid fa-phone text-chevyGold"></i> Единый колл-центр: +998 (78) 141-77-77
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN STICKY NAVIGATION HEADER -->
+    <header class="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+            <!-- Official Brand Logo -->
+            <a href="#" class="flex items-center gap-3.5 group">
+                <div class="w-14 h-11 rounded-xl bg-slate-900 dark:bg-slate-800 border border-slate-700 flex items-center justify-center shadow-sm group-hover:border-chevyGold transition">
+                    <!-- Realistic Gold Chevrolet Bowtie -->
+                    <svg class="w-10 h-5" viewBox="0 0 120 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40 10H80V18H114L104 38H80V42H40V34H6L16 14H40V10Z" fill="url(#chevyGoldGrad)" stroke="#FEF08A" stroke-width="2"/>
+                        <defs>
+                            <linearGradient id="chevyGoldGrad" x1="0" y1="0" x2="120" y2="50" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#FDE047"/>
+                                <stop offset="50%" stop-color="#D49A2A"/>
+                                <stop offset="100%" stop-color="#854D0E"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="font-display font-black text-lg sm:text-xl tracking-tight text-slate-900 dark:text-white">UZAUTO</span>
+                        <span class="font-display font-extrabold text-xs px-2 py-0.5 rounded bg-uzBlue text-white">MOTORS</span>
+                    </div>
+                    <p class="text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-widest">Chevrolet Uzbekistan</p>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden xl:flex items-center gap-1 text-sm font-semibold text-slate-700 dark:text-slate-200">
+                <a href="#catalog" class="px-3.5 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-uzBlue dark:hover:text-sky-400 transition flex items-center gap-1.5">
+                    <i class="fa-solid fa-car text-uzBlue dark:text-sky-400"></i> Каталог и цены (8)
+                </a>
+                <a href="#configurator" class="px-3.5 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-uzBlue dark:hover:text-sky-400 transition">
+                    Фото-Конфигуратор
+                </a>
+                <a href="#calculator" class="px-3.5 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-uzBlue dark:hover:text-sky-400 transition">
+                    Кредит и Trade-In
+                </a>
+                <a href="#comparison" class="px-3.5 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-uzBlue dark:hover:text-sky-400 transition">
+                    Сравнение авто
+                </a>
+                <a href="#queue-checker" class="px-3.5 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-uzBlue dark:hover:text-sky-400 transition">
+                    Статус договора
+                </a>
+            </nav>
+
+            <!-- Right Utilities -->
+            <div class="flex items-center gap-2.5">
+                <!-- Currency Switcher -->
+                <button onclick="toggleCurrencyDisplay()" class="px-3 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-xs font-bold text-slate-700 dark:text-slate-200 hover:border-uzBlue transition flex items-center gap-1.5" title="Переключить валюту цен">
+                    <i class="fa-solid fa-money-bill-transfer text-chevyGold"></i>
+                    <span id="currency-label">UZS (Сум)</span>
+                </button>
+
+                <!-- Light / Dark Showroom Switcher -->
+                <button onclick="toggleTheme()" class="w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 flex items-center justify-center text-slate-700 dark:text-amber-400 hover:border-uzBlue transition" title="Дневной / Ночной режим шоурума">
+                    <i id="theme-icon" class="fa-solid fa-moon text-base"></i>
+                </button>
+
+                <!-- Primary CTA -->
+                <button onclick="openTestDriveModal()" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-uzBlue hover:bg-uzBlueLight text-white font-bold text-xs sm:text-sm shadow-md shadow-uzBlue/20 transition">
+                    <i class="fa-solid fa-steering-wheel"></i>
+                    <span>Запись на тест-драйв</span>
+                </button>
+
+                <!-- Mobile Hamburger -->
+                <button onclick="toggleMobileMenu()" class="xl:hidden w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-700 flex items-center justify-center">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden xl:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 px-4 pt-3 pb-5 space-y-2">
+            <a href="#catalog" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg font-semibold hover:bg-slate-100 dark:hover:bg-slate-800">Модельный ряд и цены (8 авто с фото)</a>
+            <a href="#configurator" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg font-semibold hover:bg-slate-100 dark:hover:bg-slate-800">Фото-конфигуратор Chevrolet</a>
+            <a href="#calculator" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg font-semibold hover:bg-slate-100 dark:hover:bg-slate-800">Калькулятор кредита и Trade-In</a>
+            <a href="#comparison" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg font-semibold hover:bg-slate-100 dark:hover:bg-slate-800">Сравнение моделей</a>
+            <a href="#queue-checker" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg font-semibold hover:bg-slate-100 dark:hover:bg-slate-800">Проверка очереди UzAuto Savdo</a>
+            <button onclick="toggleMobileMenu(); openTestDriveModal();" class="w-full py-3 rounded-xl bg-uzBlue text-white font-bold text-sm">
+                Записаться на тест-драйв в Ташкенте
+            </button>
+        </div>
+    </header>
+
+    <!-- =================================================================
+         1. REALISTIC PHOTO HERO SHOWROOM WITH INTERACTIVE HEADLIGHTS & SOUND
+    ================================================================== -->
+    <section id="hero-showcase" class="relative bg-slate-950 text-white overflow-hidden border-b border-slate-800">
+        <!-- Background Photo Layer with Smooth Transition -->
+        <div id="hero-photo-stage" class="relative min-h-[560px] lg:min-h-[620px] flex items-center py-12 lg:py-16">
+            <!-- Real High-Resolution Automotive Photo Background -->
+            <div class="absolute inset-0 z-0 overflow-hidden">
+                <img id="hero-main-img"
+                     src="https://admin.olamavto.uz/storage/photos/original/69414c71e6da8.png"
+                     alt="Chevrolet Malibu XL"
+                     onerror="this.src='https://placehold.co/1600x900/0f172a/ffffff?text=Chevrolet+Uzbekistan'"
+                     class="w-full h-full object-cover object-center transition-all duration-700 scale-105 brightness-90">
+                <!-- Showroom Dark Gradient Overlay for Crisp Typography -->
+                <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/25"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/50"></div>
+
+                <!-- Interactive LED Headlight Flare & Road Beam Overlay -->
+                <div class="headlight-flare-overlay absolute inset-0 z-10 mix-blend-screen">
+                    <div class="absolute top-1/2 right-[18%] w-72 h-72 -translate-y-1/2 rounded-full bg-sky-400/50 blur-3xl"></div>
+                    <div class="absolute top-1/2 right-[28%] w-40 h-40 -translate-y-1/2 rounded-full bg-white/80 blur-2xl"></div>
+                    <div class="absolute bottom-0 right-10 w-[600px] h-56 bg-gradient-to-t from-sky-400/35 via-blue-500/15 to-transparent blur-2xl transform -skew-x-12"></div>
+                </div>
+            </div>
+
+            <!-- Hero Foreground Content -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
+                    <!-- Left Column: Vehicle Details & Controls (7 cols) -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="flex flex-wrap items-center gap-2.5">
+                            <span id="hero-badge" class="px-3 py-1 rounded-full bg-chevyGold text-slate-950 text-xs font-extrabold uppercase tracking-wider">
+                                Бизнес-седан • В наличии
+                            </span>
+                            <span id="hero-stock" class="px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-semibold flex items-center gap-1.5">
+                                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                                Выдача за 1 день в автосалонах Ташкента
+                            </span>
+                        </div>
+
+                        <div>
+                            <p class="text-xs font-bold uppercase tracking-widest text-sky-400 mb-1">Официальный модельный ряд 2026</p>
+                            <h1 id="hero-title" class="font-display text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white">
+                                Chevrolet Malibu XL
+                            </h1>
+                            <p id="hero-subtitle" class="mt-3 text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
+                                Флагманский седан бизнес-класса с турбодвигателем 2.0L (237 л.с.), 9-ступенчатой АКПП Hydra-Matic, панорамной крышей и премиальной акустикой Bose.
+                            </p>
+                        </div>
+
+                        <!-- Key Performance & Price Strip -->
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
+                            <div class="bg-slate-900/80 backdrop-blur-md border border-white/15 rounded-2xl p-3.5">
+                                <span class="text-[11px] text-slate-400 uppercase font-semibold block">Двигатель</span>
+                                <span id="hero-hp" class="font-display text-xl font-extrabold text-white mt-0.5 block">237 л.с.</span>
+                            </div>
+                            <div class="bg-slate-900/80 backdrop-blur-md border border-white/15 rounded-2xl p-3.5">
+                                <span class="text-[11px] text-slate-400 uppercase font-semibold block">Разгон 0–100</span>
+                                <span id="hero-accel" class="font-display text-xl font-extrabold text-white mt-0.5 block">7.8 сек</span>
+                            </div>
+                            <div class="bg-slate-900/80 backdrop-blur-md border border-white/15 rounded-2xl p-3.5">
+                                <span class="text-[11px] text-slate-400 uppercase font-semibold block">Расход топлива</span>
+                                <span id="hero-fuel" class="font-display text-xl font-extrabold text-white mt-0.5 block">7.2 л/100</span>
+                            </div>
+                            <div class="bg-uzBlue/90 backdrop-blur-md border border-sky-400/40 rounded-2xl p-3.5">
+                                <span class="text-[11px] text-sky-200 uppercase font-semibold block">Официальная цена</span>
+                                <span id="hero-price" class="font-display text-lg sm:text-xl font-black text-chevyGoldLight mt-0.5 block">375 млн сум</span>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Showroom Bar: Headlights, Engine Sound & Tachometer -->
+                        <div class="bg-slate-900/90 backdrop-blur-md border border-white/15 rounded-2xl p-4 flex flex-wrap items-center justify-between gap-4">
+                            <div class="flex flex-wrap items-center gap-2.5">
+                                <!-- Headlights Button -->
+                                <button onclick="toggleHeroHeadlights()" id="btn-hero-lights" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-xs font-bold text-white flex items-center gap-2 transition">
+                                    <i class="fa-solid fa-lightbulb text-sky-400"></i>
+                                    <span id="headlight-btn-text">Включить LED-фары</span>
+                                </button>
+
+                                <!-- Start Engine Audio Button -->
+                                <button onclick="toggleHeroEngine()" id="btn-hero-engine" class="px-4 py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-xs font-bold text-white flex items-center gap-2 shadow-lg shadow-red-600/30 transition">
+                                    <i class="fa-solid fa-power-off"></i>
+                                    <span id="engine-btn-text">Запустить двигатель (Звук)</span>
+                                </button>
+
+                                <!-- Rev Pedal -->
+                                <button onclick="revHeroEngine()" id="btn-hero-rev" class="px-3.5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-600 text-xs font-bold text-chevyGoldLight flex items-center gap-1.5 transition opacity-60">
+                                    <i class="fa-solid fa-gauge-high"></i>
+                                    <span>Газ 6800 RPM</span>
+                                </button>
+                            </div>
+
+                            <!-- Digital Tachometer Readout -->
+                            <div class="flex items-center gap-3 pl-2 border-l border-white/10">
+                                <div>
+                                    <div class="text-[10px] uppercase text-slate-400 font-bold">Тахометр</div>
+                                    <div class="font-display text-base font-black text-chevyGoldLight"><span id="hud-rpm">0</span> <span class="text-[10px] text-slate-400 font-normal">об/мин</span></div>
+                                </div>
+                                <div class="w-24 h-2 bg-slate-800 rounded-full overflow-hidden">
+                                    <div id="hud-rpm-bar" class="h-full bg-gradient-to-r from-emerald-400 via-amber-400 to-red-500 transition-all duration-150" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main Action CTA Buttons -->
+                        <div class="flex flex-wrap items-center gap-3 pt-1">
+                            <button onclick="openCarDetailModal(currentHeroModel)" class="px-6 py-3.5 rounded-xl bg-white text-slate-950 hover:bg-slate-100 font-bold text-sm shadow-lg flex items-center gap-2 transition">
+                                <i class="fa-regular fa-images text-uzBlue"></i>
+                                <span>Фотогалерея и комплектации</span>
+                            </button>
+                            <button onclick="openModelInConfigurator(currentHeroModel)" class="px-6 py-3.5 rounded-xl bg-uzBlue hover:bg-uzBlueLight text-white font-bold text-sm shadow-lg flex items-center gap-2 transition">
+                                <i class="fa-solid fa-sliders"></i>
+                                <span>Собрать в конфигураторе</span>
+                            </button>
+                            <button onclick="openTestDriveModal(currentHeroModel)" class="px-5 py-3.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-white/20 text-white font-semibold text-sm flex items-center gap-2 transition">
+                                <i class="fa-regular fa-calendar-check text-chevyGoldLight"></i>
+                                <span>Тест-драйв</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Real Photo Thumbnail Selector Cards (5 cols) -->
+                    <div class="lg:col-span-5">
+                        <div class="bg-slate-900/80 backdrop-blur-md border border-white/15 rounded-3xl p-4 space-y-3">
+                            <div class="flex items-center justify-between px-1 text-xs font-bold uppercase tracking-wider text-slate-300">
+                                <span>Выберите флагман шоурума</span>
+                                <span class="text-chevyGoldLight"><i class="fa-solid fa-camera mr-1"></i>Реальные фото</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-3" id="hero-thumb-cards">
+                                <!-- Generated dynamically via JS with real car photos -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK ADVANTAGES BAR -->
+    <section class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-2xl bg-uzBlue/10 dark:bg-uzBlue/20 text-uzBlue dark:text-sky-400 flex items-center justify-center text-xl flex-shrink-0">
+                    <i class="fa-solid fa-percent"></i>
+                </div>
+                <div>
+                    <div class="font-display font-bold text-sm sm:text-base">Рассрочка 0% годовых</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Официальная программа на Onix, Tracker и Captiva</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-chevyGold flex items-center justify-center text-xl flex-shrink-0">
+                    <i class="fa-solid fa-right-left"></i>
+                </div>
+                <div>
+                    <div class="font-display font-bold text-sm sm:text-base">Официальный Trade-In</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Обмен вашего авто на новый Chevrolet за 2 часа</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl flex-shrink-0">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                    <div class="font-display font-bold text-sm sm:text-base">Заводская гарантия GM</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">3 года или 100 000 км во всех сервисах РУз</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-2xl bg-sky-500/10 text-sky-600 dark:text-sky-400 flex items-center justify-center text-xl flex-shrink-0">
+                    <i class="fa-solid fa-file-contract"></i>
+                </div>
+                <div>
+                    <div class="font-display font-bold text-sm sm:text-base">Договор UzAuto Savdo</div>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">Прозрачное оформление с проверкой VIN онлайн</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+         2. FULL 8-MODEL CATALOG WITH REAL PHOTOS, INTERIOR TABS & FILTERS
+    ================================================================== -->
+    <section id="catalog" class="py-16 lg:py-20 border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-uzBlue/10 dark:bg-uzBlue/25 text-uzBlue dark:text-sky-400 text-xs font-bold uppercase tracking-wider mb-2.5">
+                        <i class="fa-solid fa-car-side"></i> Официальный каталог 2026 с фотографиями
+                    </div>
+                    <h2 class="font-display text-3xl sm:text-4xl font-black tracking-tight">
+                        МОДЕЛЬНЫЙ РЯД <span class="text-uzBlue dark:text-sky-400">CHEVROLET UZBEKISTAN</span>
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-1">
+                        На каждой карточке можно переключать реальные фото <strong>«Кузов / Салон / Детали»</strong>, менять цвет и смотреть комплектации.
+                    </p>
+                </div>
+
+                <!-- Search & Sort Controls -->
+                <div class="flex flex-wrap items-center gap-3">
+                    <div class="relative">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+                        <input type="text" id="catalog-search" oninput="renderCatalog()" placeholder="Поиск модели (Onix, Gentra...)"
+                               class="pl-9 pr-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs sm:text-sm font-medium focus:outline-none focus:border-uzBlue">
+                    </div>
+                    <select id="catalog-sort" onchange="renderCatalog()" class="px-3.5 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs sm:text-sm font-semibold focus:outline-none focus:border-uzBlue">
+                        <option value="popular">Сортировка: По популярности</option>
+                        <option value="price_asc">Сначала доступные по цене</option>
+                        <option value="price_desc">Сначала премиальные модели</option>
+                        <option value="hp_desc">По мощности двигателя (л.с.)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Category Filter Pills -->
+            <div class="flex flex-wrap items-center gap-2 mb-8" id="catalog-filters">
+                <button onclick="setCatalogFilter('all')" data-filter="all" class="catalog-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-uzBlue text-white shadow-sm transition">
+                    Все модели (8)
+                </button>
+                <button onclick="setCatalogFilter('sedan')" data-filter="sedan" class="catalog-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold dealer-card hover:border-uzBlue transition">
+                    Седаны (4)
+                </button>
+                <button onclick="setCatalogFilter('suv')" data-filter="suv" class="catalog-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold dealer-card hover:border-uzBlue transition">
+                    Кроссоверы и Внедорожники (4)
+                </button>
+                <button onclick="setCatalogFilter('installment')" data-filter="installment" class="catalog-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold dealer-card hover:border-amber-500 text-amber-600 dark:text-amber-400 transition">
+                    <i class="fa-solid fa-bolt mr-1"></i>Рассрочка 0%
+                </button>
+                <button onclick="setCatalogFilter('instock')" data-filter="instock" class="catalog-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold dealer-card hover:border-emerald-500 text-emerald-600 dark:text-emerald-400 transition">
+                    <i class="fa-solid fa-check-circle mr-1"></i>В наличии в салоне
+                </button>
+            </div>
+
+            <!-- Catalog Cards Grid (8 Realistic Photo Cards) -->
+            <div id="catalog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Populated dynamically via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+         3. PHOTO-BASED STUDIO CONFIGURATOR WITH MULTI-ANGLE REAL PHOTOS
+    ================================================================== -->
+    <section id="configurator" class="py-16 lg:py-20 bg-slate-100/70 dark:bg-slate-900/50 border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-uzBlue/10 dark:bg-uzBlue/25 text-uzBlue dark:text-sky-400 text-xs font-bold uppercase tracking-wider mb-2.5">
+                        <i class="fa-solid fa-Sliders"></i> Онлайн-сборка автомобиля с реальными фото
+                    </div>
+                    <h2 class="font-display text-3xl sm:text-4xl font-black tracking-tight">
+                        ФОТО-КОНФИГУРАТОР <span class="text-uzBlue dark:text-sky-400">CHEVROLET</span>
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-1">
+                        Выберите модель, ракурс съемки (Экстерьер, Салон, Диски), оттенок кузова, комплектацию и пакеты дилера.
+                    </p>
+                </div>
+
+                <!-- Camera Angle Switcher -->
+                <div class="inline-flex p-1.5 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <button onclick="setConfiguratorAngle('ext')" id="cfg-angle-ext" class="px-4 py-2 rounded-xl text-xs font-bold bg-uzBlue text-white transition">
+                        <i class="fa-solid fa-car mr-1.5"></i>Экстерьер
+                    </button>
+                    <button onclick="setConfiguratorAngle('int')" id="cfg-angle-int" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-uzBlue transition">
+                        <i class="fa-solid fa-dharmachakra mr-1.5"></i>Салон и мультимедиа
+                    </button>
+                    <button onclick="setConfiguratorAngle('detail')" id="cfg-angle-detail" class="px-4 py-2 rounded-xl text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-uzBlue transition">
+                        <i class="fa-solid fa-compact-disc mr-1.5"></i>Диски и оптика
+                    </button>
+                </div>
+            </div>
+
+            <!-- Model Selector Strip (8 Models with Mini Photos) -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2.5 mb-8" id="config-model-buttons">
+                <!-- Populated by JS -->
+            </div>
+
+            <!-- Main Configurator Layout -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Left: Photo Stage & Spec Summary (7 cols) -->
+                <div class="lg:col-span-7 space-y-5">
+                    <div class="dealer-card rounded-3xl overflow-hidden">
+                        <!-- Top Price & Title Bar -->
+                        <div class="p-5 sm:p-6 flex flex-wrap items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800">
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span id="config-trim-badge" class="px-2.5 py-0.5 rounded-md bg-uzBlue text-white text-xs font-bold uppercase">
+                                        PREMIER
+                                    </span>
+                                    <span id="config-color-badge" class="text-xs font-semibold text-slate-500 dark:text-slate-400">
+                                        Цвет: Summit White (Белый жемчуг)
+                                    </span>
+                                </div>
+                                <h3 id="config-car-name" class="font-display text-2xl sm:text-3xl font-black mt-1">Chevrolet Onix Premier</h3>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-[11px] uppercase font-bold text-slate-400 block">Итоговая цена конфигурации</span>
+                                <div id="config-total-uzs" class="font-display text-2xl sm:text-3xl font-black text-uzBlue dark:text-sky-400">204 900 000 сум</div>
+                                <div id="config-total-usd" class="text-xs font-semibold text-slate-500">≈ $16 008 USD</div>
+                            </div>
+                        </div>
+
+                        <!-- Large High-Res Real Car Image Container -->
+                        <div class="relative h-[320px] sm:h-[420px] bg-slate-900 overflow-hidden group">
+                            <img id="config-main-photo"
+                                 src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1400&q=85"
+                                 alt="Конфигуратор Chevrolet"
+                                 onerror="this.src='https://placehold.co/1200x700/0f172a/ffffff?text=Chevrolet+Studio'"
+                                 class="w-full h-full object-cover object-center transition-all duration-500">
+
+                            <!-- Dynamic Paint Tint Overlay for Exterior View -->
+                            <div id="config-paint-overlay" class="absolute inset-0 pointer-events-none mix-blend-color opacity-0 transition-opacity duration-300"></div>
+
+                            <!-- Floating Angle Quick Buttons -->
+                            <div class="absolute bottom-4 left-4 right-4 flex flex-wrap items-center justify-between gap-2">
+                                <div class="px-3.5 py-1.5 rounded-xl bg-slate-950/80 backdrop-blur-md text-white text-xs font-semibold border border-white/15">
+                                    <i class="fa-solid fa-camera text-chevyGoldLight mr-1.5"></i>
+                                    <span id="config-photo-caption">Экстерьер • Официальная комплектация</span>
+                                </div>
+                                <button onclick="openCarDetailModal(configState.modelKey)" class="px-3.5 py-1.5 rounded-xl bg-white/95 hover:bg-white text-slate-900 text-xs font-bold shadow-md transition">
+                                    <i class="fa-solid fa-expand mr-1 text-uzBlue"></i> Открыть все 4 фото и таблицу позиций
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Technical Specs Bar -->
+                        <div class="p-4 sm:p-5 bg-slate-50 dark:bg-slate-800/60 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
+                            <div>
+                                <span class="text-slate-400 block">Двигатель и мощность</span>
+                                <strong id="config-spec-engine" class="font-bold text-sm text-slate-800 dark:text-white mt-0.5 block">1.2L Turbo (132 л.с.)</strong>
+                            </div>
+                            <div>
+                                <span class="text-slate-400 block">Коробка передач</span>
+                                <strong id="config-spec-trans" class="font-bold text-sm text-slate-800 dark:text-white mt-0.5 block">6-ст. АКПП</strong>
+                            </div>
+                            <div>
+                                <span class="text-slate-400 block">Расход / Разгон</span>
+                                <strong id="config-spec-fuel" class="font-bold text-sm text-slate-800 dark:text-white mt-0.5 block">5.9 л / 9.7 сек</strong>
+                            </div>
+                            <div>
+                                <span class="text-slate-400 block">Объем багажника</span>
+                                <strong id="config-spec-trunk" class="font-bold text-sm text-slate-800 dark:text-white mt-0.5 block">469 литров</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Bar below Studio -->
+                    <div class="dealer-card rounded-2xl p-5 flex flex-wrap items-center justify-between gap-4">
+                        <div>
+                            <div class="text-sm font-bold">Спецификация готова к бронированию в UzAuto Savdo</div>
+                            <div id="config-summary-line" class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Chevrolet Onix • Premier • 18" Diamond Cut</div>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2.5">
+                            <button onclick="sendConfigToCalculator()" class="px-4 py-2.5 rounded-xl border border-uzBlue text-uzBlue dark:text-sky-400 hover:bg-uzBlue hover:text-white text-xs sm:text-sm font-bold transition">
+                                <i class="fa-solid fa-calculator mr-1.5"></i>Рассчитать в кредит
+                            </button>
+                            <button onclick="openTestDriveModal(configState.modelKey, true)" class="px-5 py-2.5 rounded-xl bg-uzBlue hover:bg-uzBlueLight text-white text-xs sm:text-sm font-bold shadow-md transition">
+                                Забронировать эту комплектацию
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Customization Controls (5 cols) -->
+                <div class="lg:col-span-5 dealer-card rounded-3xl p-6 space-y-6">
+                    <!-- 1. Paint Color Picker -->
+                    <div>
+                        <div class="flex items-center justify-between mb-3">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">1. Цвет кузова (Заводская палитра GM)</label>
+                            <span id="selected-color-name" class="text-xs font-bold text-uzBlue dark:text-sky-400">Summit White</span>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-3" id="color-swatches-container">
+                            <!-- Generated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- 2. Trim Level -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5">2. Комплектация (Позиция)</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5" id="trim-buttons-container">
+                            <!-- Generated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- 3. Wheel Design -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5">3. Легкосплавные колесные диски</label>
+                        <div class="grid grid-cols-2 gap-2.5" id="wheel-buttons-container">
+                            <!-- Generated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- 4. Official Dealership Packages -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2.5">4. Официальное доп. оборудование</label>
+                        <div class="space-y-2" id="extra-options-container">
+                            <!-- Generated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+         4. CREDIT, INSTALLMENT 0% & TRADE-IN CALCULATOR WITH CAR PHOTO
+    ================================================================== -->
+    <section id="calculator" class="py-16 lg:py-20 border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-4">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-bold uppercase tracking-wider mb-2.5">
+                        <i class="fa-solid fa-landmark"></i> Финансовый сервис UzAuto Finance & Trade-In
+                    </div>
+                    <h2 class="font-display text-3xl sm:text-4xl font-black tracking-tight">
+                        КАЛЬКУЛЯТОР <span class="text-uzBlue dark:text-sky-400">АВТОКРЕДИТА И TRADE-IN</span>
+                    </h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-1">
+                        Выберите автомобиль, включите оценку вашего старого авто по программе Trade-In и сравните условия банков Узбекистана.
+                    </p>
+                </div>
+
+                <!-- Bank Presets -->
+                <div class="flex flex-wrap gap-2">
+                    <button onclick="applyFinancePreset(0, 50, 24)" class="px-3.5 py-2 rounded-xl border border-emerald-500/40 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 text-xs font-bold hover:bg-emerald-500 hover:text-white transition">
+                        Рассрочка UzAuto 0% (24 мес)
+                    </button>
+                    <button onclick="applyFinancePreset(16.5, 30, 36)" class="px-3.5 py-2 rounded-xl dealer-card text-xs font-bold hover:border-uzBlue transition">
+                        Asaka Bank 16.5%
+                    </button>
+                    <button onclick="applyFinancePreset(18.9, 25, 48)" class="px-3.5 py-2 rounded-xl dealer-card text-xs font-bold hover:border-uzBlue transition">
+                        Kapitalbank 18.9%
+                    </button>
+                    <button onclick="applyFinancePreset(21.5, 15, 60)" class="px-3.5 py-2 rounded-xl dealer-card text-xs font-bold hover:border-uzBlue transition">
+                        Ipak Yuli 21.5% (до 60 мес)
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Left: Sliders & Trade-In Controls (7 cols) -->
+                <div class="lg:col-span-7 dealer-card rounded-3xl p-6 sm:p-8 space-y-6">
+                    <!-- Car Selector with Photo Preview -->
+                    <div class="flex flex-col sm:flex-row items-center gap-4 p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700">
+                        <img id="calc-car-photo"
+                             src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=600&q=80"
+                             alt="Выбранное авто"
+                             class="w-full sm:w-36 h-24 rounded-xl object-cover flex-shrink-0">
+                        <div class="w-full">
+                            <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1">Выберите модель Chevrolet для расчета</label>
+                            <select id="calc-model-select" onchange="onCalcModelSelect(this.value)" class="w-full rounded-xl bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 px-3.5 py-2.5 text-sm font-bold focus:outline-none focus:border-uzBlue">
+                                <!-- Populated dynamically -->
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Slider 1: Vehicle Price -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-semibold text-slate-600 dark:text-slate-300">Стоимость автомобиля</span>
+                            <span id="calc-price-display" class="font-display text-lg font-black text-uzBlue dark:text-sky-400">176 900 000 сум</span>
+                        </div>
+                        <input type="range" id="calc-price-slider" min="140000000" max="1200000000" step="2000000" value="176900000" oninput="updateCreditCalculator()">
+                    </div>
+
+                    <!-- Trade-In Toggle & Value Slider -->
+                    <div class="p-4 rounded-2xl border border-amber-500/30 bg-amber-500/5 space-y-3">
+                        <label class="flex items-center justify-between cursor-pointer">
+                            <span class="flex items-center gap-2 text-sm font-bold">
+                                <i class="fa-solid fa-rotate text-chevyGold"></i>
+                                Сдать свой автомобиль по программе Trade-In
+                            </span>
+                            <input type="checkbox" id="calc-tradein-toggle" onchange="updateCreditCalculator()" class="w-5 h-5 accent-uzBlue rounded">
+                        </label>
+                        <div id="calc-tradein-box" class="hidden space-y-2 pt-2 border-t border-amber-500/20">
+                            <div class="flex justify-between items-center text-xs">
+                                <span class="text-slate-500 dark:text-slate-400">Оценочная стоимость вашего авто в зачет:</span>
+                                <strong id="calc-tradein-display" class="font-display text-sm font-bold text-amber-600 dark:text-amber-400">65 000 000 сум</strong>
+                            </div>
+                            <input type="range" id="calc-tradein-slider" min="30000000" max="400000000" step="5000000" value="65000000" oninput="updateCreditCalculator()">
+                        </div>
+                    </div>
+
+                    <!-- Slider 2: Down Payment (%) -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm font-semibold text-slate-600 dark:text-slate-300">Первоначальный взнос в кассу (<span id="calc-down-pct" class="text-uzBlue dark:text-sky-400 font-bold">30%</span>)</span>
+                            <span id="calc-down-amount" class="font-display text-base font-bold">53 070 000 сум</span>
+                        </div>
+                        <input type="range" id="calc-down-slider" min="15" max="75" step="5" value="30" oninput="updateCreditCalculator()">
+                    </div>
+
+                    <!-- Slider 3 & 4: Term & Rate -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs font-bold uppercase text-slate-400">Срок кредита</span>
+                                <span id="calc-term-display" class="font-display text-sm font-bold">36 мес (3 года)</span>
+                            </div>
+                            <input type="range" id="calc-term-slider" min="12" max="60" step="6" value="36" oninput="updateCreditCalculator()">
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="text-xs font-bold uppercase text-slate-400">Ставка банка</span>
+                                <span id="calc-rate-display" class="font-display text-sm font-bold text-emerald-600 dark:text-emerald-400">16.5%</span>
+                            </div>
+                            <input type="range" id="calc-rate-slider" min="0" max="26" step="0.5" value="16.5" oninput="updateCreditCalculator()">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Financial Result Card (5 cols) -->
+                <div class="lg:col-span-5 dealer-card rounded-3xl p-6 sm:p-8 border-2 border-uzBlue/20 space-y-6">
+                    <div class="flex items-center justify-between gap-4 pb-5 border-b border-slate-200 dark:border-slate-800">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Ежемесячный платеж</span>
+                            <div id="calc-monthly-payment" class="font-display text-3xl sm:text-4xl font-black text-uzBlue dark:text-sky-400 mt-1">
+                                4 385 000 сум
+                            </div>
+                            <div id="calc-monthly-usd" class="text-xs font-semibold text-slate-500 mt-0.5">≈ $343 USD / месяц</div>
+                        </div>
+                        <div class="w-16 h-16 rounded-2xl bg-uzBlue/10 dark:bg-uzBlue/25 text-uzBlue dark:text-sky-400 flex items-center justify-center text-2xl font-display font-black" id="donut-center-label">
+                            70%
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-slate-500 dark:text-slate-400">Сумма финансирования (Тело кредита):</span>
+                            <strong id="calc-loan-principal" class="font-bold">123 830 000 сум</strong>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500 dark:text-slate-400">Выгода по Trade-In:</span>
+                            <strong id="calc-tradein-summary" class="font-bold text-amber-600 dark:text-amber-400">0 сум</strong>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500 dark:text-slate-400">Начисленные проценты за весь срок:</span>
+                            <strong id="calc-total-interest" class="font-bold">34 030 000 сум</strong>
+                        </div>
+                        <div class="flex justify-between pt-3 border-t border-slate-200 dark:border-slate-800">
+                            <span class="font-bold">Итоговая стоимость с учетом выплат:</span>
+                            <strong id="calc-grand-total" class="font-display font-black text-emerald-600 dark:text-emerald-400">210 930 000 сум</strong>
+                        </div>
+                    </div>
+
+                    <!-- Visual Bar -->
+                    <div>
+                        <div class="flex justify-between text-[11px] font-semibold text-slate-400 mb-1.5">
+                            <span>Основной долг + Взнос</span>
+                            <span>Проценты банка</span>
+                        </div>
+                        <div class="w-full h-3 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden flex">
+                            <div id="bar-principal" class="bg-uzBlue h-full transition-all duration-500" style="width: 82%"></div>
+                            <div id="bar-interest" class="bg-chevyGold h-full transition-all duration-500" style="width: 18%"></div>
+                        </div>
+                    </div>
+
+                    <button onclick="openTestDriveModal(null, true)" class="w-full py-4 rounded-xl bg-uzBlue hover:bg-uzBlueLight text-white font-bold text-sm shadow-lg shadow-uzBlue/25 transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Отправить заявку на кредит / Рассрочку 0%</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+         5. SIDE-BY-SIDE PHOTO COMPARISON TOOL
+    ================================================================== -->
+    <section id="comparison" class="py-16 lg:py-20 bg-slate-100/70 dark:bg-slate-900/50 border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-uzBlue/10 dark:bg-uzBlue/25 text-uzBlue dark:text-sky-400 text-xs font-bold uppercase tracking-wider mb-2.5">
+                    <i class="fa-solid fa-scale-balanced"></i> Детальное сравнение характеристик
+                </div>
+                <h2 class="font-display text-3xl sm:text-4xl font-black">СРАВНЕНИЕ <span class="text-uzBlue dark:text-sky-400">МОДЕЛЕЙ CHEVROLET</span></h2>
+                <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-1">Выберите любые две модели из каталога, чтобы наглядно сопоставить их фотографии, динамику, габариты и цены.</p>
+            </div>
+
+            <div class="dealer-card rounded-3xl p-6 sm:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-8 border-b border-slate-200 dark:border-slate-800">
+                    <!-- Car A -->
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-uzBlue dark:text-sky-400">Автомобиль #1</span>
+                            <span id="comp-badge-a" class="px-2.5 py-0.5 rounded bg-uzBlue/10 text-uzBlue dark:text-sky-400 text-xs font-bold">Кроссовер</span>
+                        </div>
+                        <select id="comp-select-a" onchange="updateComparison()" class="w-full rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-4 py-3 text-base font-bold focus:outline-none focus:border-uzBlue"></select>
+                        <div class="relative h-48 sm:h-56 rounded-2xl overflow-hidden bg-slate-900">
+                            <img id="comp-photo-a" src="" alt="Авто 1" class="w-full h-full object-cover">
+                            <div class="absolute bottom-3 left-3 px-3 py-1 rounded-lg bg-slate-950/80 text-white text-xs font-bold" id="comp-price-a"></div>
+                        </div>
+                    </div>
+
+                    <!-- Car B -->
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-bold uppercase tracking-wider text-chevyGold">Автомобиль #2</span>
+                            <span id="comp-badge-b" class="px-2.5 py-0.5 rounded bg-amber-500/15 text-amber-600 dark:text-amber-400 text-xs font-bold">Седан</span>
+                        </div>
+                        <select id="comp-select-b" onchange="updateComparison()" class="w-full rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-4 py-3 text-base font-bold focus:outline-none focus:border-chevyGold"></select>
+                        <div class="relative h-48 sm:h-56 rounded-2xl overflow-hidden bg-slate-900">
+                            <img id="comp-photo-b" src="" alt="Авто 2" class="w-full h-full object-cover">
+                            <div class="absolute bottom-3 left-3 px-3 py-1 rounded-lg bg-slate-950/80 text-white text-xs font-bold" id="comp-price-b"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparison Bars -->
+                <div id="comparison-metrics-container" class="space-y-6 pt-8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+         6. UZAUTO SAVDO CONTRACT STATUS & TASHKENT DEALERSHIPS
+    ================================================================== -->
+    <section id="queue-checker" class="py-16 lg:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <!-- Left: Contract Tracker (7 cols) -->
+                <div class="lg:col-span-7 dealer-card rounded-3xl p-6 sm:p-8">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 text-xs font-bold uppercase tracking-wider mb-2.5">
+                        <i class="fa-solid fa-satellite-dish"></i> Система мониторинга UzAuto Savdo
+                    </div>
+                    <h2 class="font-display text-2xl sm:text-3xl font-black">ПРОВЕРКА СТАТУСА ДОГОВОРА И VIN</h2>
+                    <p class="text-slate-600 dark:text-slate-400 text-sm mt-1">
+                        Отследите этап производства вашего автомобиля на заводе в г. Асака или Хорезме до момента прибытия на склад дилера в Ташкенте.
+                    </p>
+
+                    <div class="mt-6 space-y-3">
+                        <div class="flex flex-col sm:flex-row gap-2.5">
+                            <input type="text" id="contract-input" value="UZ-2026-84920" placeholder="Номер договора: UZ-2026-84920"
+                                   class="flex-1 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-4 py-3.5 text-sm font-mono font-bold focus:outline-none focus:border-uzBlue">
+                            <button onclick="checkContractStatus()" class="px-6 py-3.5 rounded-xl bg-uzBlue hover:bg-uzBlueLight text-white font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>Проверить договор</span>
+                            </button>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2 text-xs">
+                            <span class="text-slate-400">Примеры договоров:</span>
+                            <button onclick="fillDemoContract('UZ-2026-84920')" class="px-2.5 py-1 rounded-lg border border-slate-300 dark:border-slate-700 font-mono font-semibold hover:border-uzBlue">UZ-2026-84920 (Готов к выдаче)</button>
+                            <button onclick="fillDemoContract('UZ-2026-51039')" class="px-2.5 py-1 rounded-lg border border-slate-300 dark:border-slate-700 font-mono font-semibold hover:border-uzBlue">UZ-2026-51039 (В пути на автовозе)</button>
+                            <button onclick="fillDemoContract('UZ-2026-99412')" class="px-2.5 py-1 rounded-lg border border-slate-300 dark:border-slate-700 font-mono font-semibold hover:border-uzBlue">UZ-2026-99412 (Цех сборки Асака)</button>
+                        </div>
+                    </div>
+
+                    <div id="contract-result-box" class="mt-6 p-5 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 space-y-5"></div>
+                </div>
+
+                <!-- Right: Official Tashkent Showrooms (5 cols) -->
+                <div class="lg:col-span-5 dealer-card rounded-3xl p-6 sm:p-8 space-y-5">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-uzBlue/10 dark:bg-uzBlue/25 text-uzBlue dark:text-sky-400 text-xs font-bold uppercase tracking-wider mb-2">
+                            <i class="fa-solid fa-location-dot"></i> Официальные автосалоны Ташкента
+                        </div>
+                        <h3 class="font-display text-2xl font-black">ДИЛЕРСКАЯ СЕТЬ</h3>
+                        <p class="text-slate-500 dark:text-slate-400 text-xs sm:text-sm mt-1">Нажмите на филиал для записи на тест-драйв или сервис:</p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div onclick="openTestDriveModal('tracker', false, 'Сергели Автотеххизмат')" class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-uzBlue cursor-pointer transition">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-sm">Сергели Автотеххизмат</h4>
+                                <span class="text-[11px] px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-bold">09:00 – 20:00</span>
+                            </div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">г. Ташкент, Сергелийский р-н, ул. Обод Турмуш, 74</p>
+                        </div>
+
+                        <div onclick="openTestDriveModal('malibu', false, 'Nurafshon Avtocentr (Рохат)')" class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-uzBlue cursor-pointer transition">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-sm">Nurafshon Avtocentr (Автосалон Рохат)</h4>
+                                <span class="text-[11px] px-2 py-0.5 rounded bg-uzBlue/15 text-uzBlue dark:text-sky-400 font-bold">Флагманский шоурум</span>
+                            </div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">г. Ташкент, Бектемирский р-н, ТКАД (ориентир круг Рохат)</p>
+                        </div>
+
+                        <div onclick="openTestDriveModal('onix', false, 'Асака Автоцентр (Яккасарай)')" class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-uzBlue cursor-pointer transition">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-sm">Асака Автоцентр (Шота Руставели)</h4>
+                                <span class="text-[11px] px-2 py-0.5 rounded bg-amber-500/15 text-amber-600 dark:text-amber-400 font-bold">Trade-In Центр</span>
+                            </div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">г. Ташкент, Яккасарайский р-н, ул. Шота Руставели, 152</p>
+                        </div>
+
+                        <div onclick="openTestDriveModal('tahoe', false, 'Юнусабад Premium Chevrolet')" class="p-4 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-uzBlue cursor-pointer transition">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-sm">Юнусабад Premium Chevrolet</h4>
+                                <span class="text-[11px] px-2 py-0.5 rounded bg-purple-500/15 text-purple-600 dark:text-purple-400 font-bold">VIP Зал (Tahoe / Malibu)</span>
+                            </div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">г. Ташкент, Юнусабадский р-н, пр-т Амира Темура, 108</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs">
+            <div>
+                <span class="font-display font-bold text-white text-sm">АО «UZAUTO MOTORS»</span>
+                <p class="mt-1">Официальный дистрибьютор автомобилей Chevrolet в Республике Узбекистан. Цены указаны с учетом НДС 12%.</p>
+            </div>
+            <div class="flex flex-wrap gap-6 font-semibold text-slate-300">
+                <a href="#catalog" class="hover:text-white">Каталог авто</a>
+                <a href="#configurator" class="hover:text-white">Конфигуратор</a>
+                <a href="#calculator" class="hover:text-white">Кредит и Trade-In</a>
+                <a href="#queue-checker" class="hover:text-white">UzAuto Savdo</a>
+            </div>
+            <div>© 2026 UzAuto Motors GM. Все права защищены.</div>
+        </div>
+    </footer>
+
+    <!-- =================================================================
+         MODAL 1: DETAILED CAR PHOTO GALLERY (4 ANGLES) & TRIM TABLE
+    ================================================================== -->
+    <div id="car-detail-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6 bg-slate-950/80 backdrop-blur-md overflow-y-auto">
+        <div class="dealer-card rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl my-auto">
+            <!-- Modal Header -->
+            <div class="p-5 sm:p-6 bg-slate-900 text-white flex items-center justify-between gap-4">
+                <div>
+                    <span id="detail-modal-badge" class="px-2.5 py-0.5 rounded bg-chevyGold text-slate-950 text-xs font-extrabold uppercase">Хит продаж</span>
+                    <h3 id="detail-modal-title" class="font-display text-2xl sm:text-3xl font-black mt-1">Chevrolet Onix Premier</h3>
+                </div>
+                <button onclick="closeCarDetailModal()" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
+                    <i class="fa-solid fa-xmark text-lg"></i>
+                </button>
+            </div>
+
+            <div class="p-5 sm:p-6 space-y-6 max-h-[82vh] overflow-y-auto">
+                <!-- Interactive Photo Gallery inside Modal -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
+                    <div class="lg:col-span-8 relative h-64 sm:h-80 rounded-2xl overflow-hidden bg-slate-900">
+                        <img id="detail-modal-main-img" src="" alt="Фото авто" class="w-full h-full object-cover transition-all duration-300">
+                        <div id="detail-modal-caption" class="absolute bottom-3 left-3 px-3 py-1 rounded-lg bg-slate-950/80 text-white text-xs font-semibold">
+                            Экстерьер
+                        </div>
+                    </div>
+                    <div class="lg:col-span-4 grid grid-cols-3 lg:grid-cols-1 gap-2.5" id="detail-modal-thumbs">
+                        <!-- 3 Photo Angle Thumbnails injected by JS -->
+                    </div>
+                </div>
+
+                <!-- Official Trim Levels Table -->
+                <div>
+                    <h4 class="font-display font-bold text-base sm:text-lg mb-3">Официальные комплектации и цены в Узбекистане</h4>
+                    <div class="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-700">
+                        <table class="w-full text-left text-xs sm:text-sm">
+                            <thead class="bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 uppercase text-[11px] font-bold">
+                                <tr>
+                                    <th class="py-3 px-4">Позиция / Комплектация</th>
+                                    <th class="py-3 px-4">Двигатель и КПП</th>
+                                    <th class="py-3 px-4">Ключевые опции</th>
+                                    <th class="py-3 px-4 text-right">Официальная цена</th>
+                                </tr>
+                            </thead>
+                            <tbody id="detail-modal-trims-body" class="divide-y divide-slate-200 dark:divide-slate-700">
+                                <!-- Populated via JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Modal Bottom CTA -->
+                <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-slate-200 dark:border-slate-700">
+                    <div class="text-xs text-slate-500">
+                        <i class="fa-solid fa-circle-check text-emerald-500 mr-1"></i> Доступно оформление в кредит, рассрочку 0% и по программе Trade-In
+                    </div>
+                    <div class="flex flex-wrap gap-2.5">
+                        <button id="detail-modal-cfg-btn" class="px-5 py-2.5 rounded-xl border border-uzBlue text-uzBlue dark:text-sky-400 font-bold text-xs sm:text-sm hover:bg-uzBlue hover:text-white transition">
+                            Открыть в конфигураторе
+                        </button>
+                        <button id="detail-modal-book-btn" class="px-6 py-2.5 rounded-xl bg-uzBlue hover:bg-uzBlueLight text-white font-bold text-xs sm:text-sm shadow-md transition">
+                            Записаться на тест-драйв
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================================================================
+         MODAL 2: TEST DRIVE & ONLINE CONTRACT BOOKING
+    ================================================================== -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+        <div class="dealer-card rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+            <button onclick="closeTestDriveModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-500 hover:text-slate-900 dark:hover:text-white">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-uzBlue/10 text-uzBlue dark:text-sky-400 text-xs font-bold uppercase mb-2.5">
+                <i class="fa-solid fa-bolt"></i> Официальная онлайн-заявка UzAuto
+            </div>
+            <h3 id="modal-title" class="font-display text-2xl font-black">ЗАПИСЬ НА ТЕСТ-ДРАЙВ</h3>
+            <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">Выберите автомобиль и удобный дилерский центр — менеджер подготовит авто к вашему визиту.</p>
+
+            <form id="booking-form" onsubmit="submitBookingForm(event)" class="space-y-4 mt-5">
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Модель Chevrolet</label>
+                    <select id="modal-model-select" class="w-full rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-4 py-3 text-sm font-bold focus:outline-none focus:border-uzBlue"></select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Дилерский центр в г. Ташкент</label>
+                    <select id="modal-dealer-select" class="w-full rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-4 py-3 text-sm font-semibold focus:outline-none focus:border-uzBlue">
+                        <option value="Сергели Автотеххизмат">Сергели Автотеххизмат (Сергелийский р-н)</option>
+                        <option value="Nurafshon Avtocentr (Рохат)">Nurafshon Avtocentr (Автосалон Рохат)</option>
+                        <option value="Асака Автоцентр (Яккасарай)">Асака Автоцентр (ул. Шота Руставели, 152)</option>
+                        <option value="Юнусабад Premium Chevrolet">Юнусабад Premium Chevrolet (пр. Амира Темура)</option>
+                    </select>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Ваше имя</label>
+                        <input type="text" id="modal-user-name" required placeholder="Азизбек Каримов" class="w-full rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-4 py-3 text-sm focus:outline-none focus:border-uzBlue">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Телефон (Узбекистан)</label>
+                        <input type="tel" id="modal-user-phone" required value="+998 " placeholder="+998 90 123-45-67" class="w-full rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 px-4 py-3 text-sm font-mono focus:outline-none focus:border-uzBlue">
+                    </div>
+                </div>
+
+                <button type="submit" class="w-full py-4 rounded-xl bg-uzBlue hover:bg-uzBlueLight text-white font-bold text-sm shadow-lg shadow-uzBlue/25 transition">
+                    Подтвердить заявку онлайн
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATIONS -->
+    <div id="toast-container" class="fixed bottom-5 right-5 z-50 space-y-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+    <!-- =================================================================
+         JAVASCRIPT ENGINE: REAL PHOTO DATABASE, AUDIO & INTERACTIVITY
+    ================================================================== -->
+    <script>
+        const USD_RATE = 12800;
+        let showPrimaryInUSD = false;
+        let activeCatalogFilter = 'all';
+
+        // 8 Popular Chevrolet Uzbekistan Models with Real High-Resolution Automotive Photos (Exterior, Interior, Details)
+        const CAR_DATABASE = {
+            onix: {
+                key: 'onix',
+                name: 'Chevrolet Onix Premier',
+                tagline: 'Современный турбированный седан с умной мультимедиа MyLink, беспроводной зарядкой и полуавтоматической парковкой.',
+                badge: 'Хит продаж 2026',
+                category: 'sedan',
+                installment0: true,
+                inStock: true,
+                basePriceUZS: 176900000,
+                hp: 132,
+                accel: 9.7,
+                fuel: 5.9,
+                trunk: 469,
+                clearance: 160,
+                engine: '1.2L CSS Prime Turbo',
+                transmission: '6-ст. АКПП (GF6)',
+                stockStatus: 'В наличии • Рассрочка 0%',
+                photos: {
+                    ext: 'https://driversvillage.uz/storage/dv/car_color/21/bQpD7lIKsJ8omcWZ1U37rMC6BVk8CJvb5oqsBptg.png',
+                    int: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=85',
+                    detail: 'https://images.unsplash.com/photo-1618843479319-5617291426a4?auto=format&fit=crop&w=1200&q=85'
+                }
+            },
+            tracker: {
+                key: 'tracker',
+                name: 'Chevrolet Tracker Redline',
+                tagline: 'Стильный городской кроссовер со спортивным обвесом Redline, панорамным люком, LED-оптикой и системой контроля слепых зон.',
+                badge: 'Кроссовер #1',
+                category: 'suv',
+                installment0: true,
+                inStock: true,
+                basePriceUZS: 215950000,
+                hp: 132,
+                accel: 10.1,
+                fuel: 6.5,
+                trunk: 390,
+                clearance: 185,
+                engine: '1.2L Turbo (132 л.с.)',
+                transmission: '6-ст. АКПП',
+                stockStatus: 'В наличии в Ташкенте',
+                photos: {
+                    ext: 'https://alafin.uz/upload/iblock/129/w3zuxbhig4iykhfgpat0q1t4whmo8mrm/d296a14be90d3d5f859012ad15d225d0b6cca50b30f6a8fee6a8ee8b26a9da00.jpg',
+                    int: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85',
+                    detail: 'https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1200&q=85'
+                }
+            },
+            malibu: {
+                key: 'malibu',
+                name: 'Chevrolet Malibu XL',
+                tagline: 'Флагманский седан бизнес-класса с 2.0-литровым турбомотором (237 л.с.), 9-ступенчатой АКПП, вентиляцией сидений и акустикой Bose.',
+                badge: 'Бизнес-флагман',
+                category: 'sedan',
+                installment0: false,
+                inStock: true,
+                basePriceUZS: 375000000,
+                hp: 237,
+                accel: 7.8,
+                fuel: 7.2,
+                trunk: 447,
+                clearance: 155,
+                engine: '2.0L Turbo LSY (237 л.с.)',
+                transmission: '9-ст. АКПП Hydra-Matic',
+                stockStatus: 'Выдача за 1 день в салоне',
+                photos: {
+                    ext: 'https://admin.olamavto.uz/storage/photos/original/69414c71e6da8.png',
+                    int: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=85',
+                    detail: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1200&q=85'
+                }
+            },
+            cobalt: {
+                key: 'cobalt',
+                name: 'Chevrolet Cobalt (2026)',
+                tagline: 'Самый востребованный семейный седан Узбекистана с неубиваемой подвеской, экономичным мотором 1.5L и огромным багажником 563 л.',
+                badge: 'Народный выбор',
+                category: 'sedan',
+                installment0: false,
+                inStock: false,
+                basePriceUZS: 146455000,
+                hp: 106,
+                accel: 11.7,
+                fuel: 6.7,
+                trunk: 563,
+                clearance: 165,
+                engine: '1.5L DOHC (106 л.с.)',
+                transmission: '6-ст. АКПП',
+                stockStatus: 'По договору UzAuto Savdo',
+                photos: {
+                    ext: 'https://kluz-photos-tasinha.kcdn.online/kluz-content/d224eba9-1d68-479c-a333-1e81036e3fa9-960x540.jpg',
+                    int: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=85',
+                    detail: 'https://images.unsplash.com/photo-1618843479319-5617291426a4?auto=format&fit=crop&w=1200&q=85'
+                }
+            },
+            captiva: {
+                key: 'captiva',
+                name: 'Chevrolet Captiva 5 Premier',
+                tagline: 'Просторный 7-местный семейный кроссовер с панорамной крышей, камерами кругового обзора 360° и большим вертикальным экраном 10.4".',
+                badge: '7 мест • Семейный',
+                category: 'suv',
+                installment0: true,
+                inStock: true,
+                basePriceUZS: 299900000,
+                hp: 149,
+                accel: 10.6,
+                fuel: 7.8,
+                trunk: 535,
+                clearance: 190,
+                engine: '1.5L Turbo (149 л.с.)',
+                transmission: 'Вариатор CVT8',
+                stockStatus: 'В наличии • Рассрочка 0%',
+                photos: {
+                    ext: 'https://driversvillage.uz/storage/dv/icon/23/5TlbCttfDaE9L0CA8eZlP29I6zI9xkaT5sLHHR0l.jpg',
+                    int: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85',
+                    detail: 'https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1200&q=85'
+                }
+            },
+            gentra: {
+                key: 'gentra',
+                name: 'Chevrolet Lacetti (Gentra)',
+                tagline: 'Проверенная временем классика узбекских дорог с мягкой независимой подвеской, люком, литыми дисками и высоким ресурсом.',
+                badge: 'Легенда дорог РУз',
+                category: 'sedan',
+                installment0: false,
+                inStock: true,
+                basePriceUZS: 169000000,
+                hp: 107,
+                accel: 11.9,
+                fuel: 7.4,
+                trunk: 405,
+                clearance: 160,
+                engine: '1.5L DOHC (ГБО-совместимый)',
+                transmission: '6-ст. АКПП',
+                stockStatus: 'В наличии (Спецпартия)',
+                photos: {
+                    ext: 'https://driversvillage.uz/storage/dv/car_color/39/JP3apTDscFPxqOOf5z2aGxJeqdpuIYVu3ZLET2Qx.png',
+                    int: 'https://www.allcarz.ru/wp-content/uploads/2015/10/foto-ravon-gentra_03.jpg',
+                    detail: 'https://olcha.uz/image/675x900/products/2022-12-23/komplekt-avtomobilnykh-diskov-4-sht-gentra-gm-kopiya-r151143-185226-1.jpeg'
+                }
+            },
+            equinox: {
+                key: 'equinox',
+                name: 'Chevrolet Equinox RS AWD',
+                tagline: 'Динамичный полноприводный кроссовер с мягким гибридом 48V, спортивным обвесом RS, адаптивным круиз-контролем и 9-ст. АКПП.',
+                badge: 'Полный привод AWD',
+                category: 'suv',
+                installment0: true,
+                inStock: true,
+                basePriceUZS: 441000000,
+                hp: 237,
+                accel: 7.9,
+                fuel: 7.5,
+                trunk: 670,
+                clearance: 198,
+                engine: '2.0L Turbo + 48V Hybrid',
+                transmission: '9-ст. АКПП AWD',
+                stockStatus: 'В наличии • Пакет RS',
+                photos: {
+                    ext: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=85',
+                    int: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85',
+                    detail: 'https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1200&q=85'
+                }
+            },
+            tahoe: {
+                key: 'tahoe',
+                name: 'Chevrolet Tahoe Z71 / RST',
+                tagline: 'Флагманский полноразмерный рамный внедорожник V8 5.3L с адаптивной пневмоподвеской Air Ride и премиальным 3-рядным салоном.',
+                badge: 'V8 5.3L Флагман',
+                category: 'suv',
+                installment0: false,
+                inStock: true,
+                basePriceUZS: 1125000000,
+                hp: 343,
+                accel: 8.0,
+                fuel: 12.4,
+                trunk: 722,
+                clearance: 235,
+                engine: '5.3L EcoTec3 V8 (343 л.с.)',
+                transmission: '10-ст. АКПП 4WD',
+                stockStatus: 'VIP-шоурум Ташкент',
+                photos: {
+                    ext: 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=1200&q=85',
+                    int: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=85',
+                    detail: 'https://images.unsplash.com/photo-1618843479319-5617291426a4?auto=format&fit=crop&w=1200&q=85'
+                }
+            }
+        };
+
+        // Paint Palette with CSS Overlay Tint for Realistic Configurator Preview
+        const PAINT_COLORS = [
+            { id: 'white', name: 'Summit White (Белый жемчуг)', hex: '#F8FAFC', tint: 'transparent', priceAdd: 0 },
+            { id: 'black', name: 'Black Meet Kettle (Черный металлик)', hex: '#0F172A', tint: 'rgba(15, 23, 42, 0.35)', priceAdd: 2500000 },
+            { id: 'silver', name: 'Switchblade Silver (Серебристый)', hex: '#94A3B8', tint: 'rgba(148, 163, 184, 0.25)', priceAdd: 1500000 },
+            { id: 'blue', name: 'Darkmoon Blue (Синий сапфир)', hex: '#0284C7', tint: 'rgba(2, 132, 199, 0.38)', priceAdd: 3500000 },
+            { id: 'redline', name: 'Redline Metallic (Красный гранат)', hex: '#DC2626', tint: 'rgba(220, 38, 38, 0.38)', priceAdd: 4000000 },
+            { id: 'gold', name: 'Empire Beige (Золотистый металлик)', hex: '#D97706', tint: 'rgba(217, 119, 6, 0.32)', priceAdd: 3500000 }
+        ];
+
+        const TRIMS = [
+            { id: 'ls', name: 'LS Standard', desc: 'Кондиционер, ABS+ESC, 6 подушек безопасности, мультируль', priceAdd: 0 },
+            { id: 'ltz', name: 'LTZ Comfort', desc: 'Климат-контроль, экран MyLink 10", камера заднего вида, круиз', priceAdd: 14500000 },
+            { id: 'premier', name: 'Premier Luxe', desc: 'Панорамный люк, кожаный салон, LED-оптика, слепые зоны', priceAdd: 28000000 },
+            { id: 'redline', name: 'Redline Sport', desc: 'Черный глянцевый обвес, красные акценты Redline, диски R18', priceAdd: 34500000 }
+        ];
+
+        const WHEELS = [
+            { id: 'aero16', name: '16" Silver Alloy', priceAdd: 0 },
+            { id: 'sport17', name: '17" Graphite Sport', priceAdd: 4200000 },
+            { id: 'diamond18', name: '18" Premier Diamond Cut', priceAdd: 7800000 },
+            { id: 'redline19', name: '19" Redline Black Gloss', priceAdd: 11500000 }
+        ];
+
+        const EXTRA_PACKAGES = [
+            { id: 'tint', name: 'Круговая тонировка Llumar + Разрешение МВД РУз на 1 год', price: 3800000 },
+            { id: 'ppf', name: 'Защитная полиуретановая бронепленка (Капот, фары, зоны риска)', price: 9500000 },
+            { id: 'winter', name: 'Зимний пакет (Подогрев всех сидений, руля и лобового стекла)', price: 4600000 }
+        ];
+
+        // State
+        let currentHeroModel = 'malibu';
+        let heroHeadlightsOn = false;
+        let heroEngineRunning = false;
+        let rpmInterval = null;
+
+        let configState = {
+            modelKey: 'onix',
+            angle: 'ext',
+            colorId: 'white',
+            trimId: 'premier',
+            wheelId: 'diamond18',
+            extras: ['tint']
+        };
+
+        // Formatters
+        function formatUZS(amount) {
+            return Math.round(amount).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' сум';
+        }
+        function formatMillionsUZS(amount) {
+            return (amount / 1000000).toFixed(1).replace('.0', '') + ' млн сум';
+        }
+        function formatUSD(amountUZS) {
+            const usd = Math.round(amountUZS / USD_RATE);
+            return '$' + usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+        }
+        function formatDisplayPrice(amountUZS) {
+            return showPrimaryInUSD ? formatUSD(amountUZS) + ' USD' : formatUZS(amountUZS);
+        }
+
+        // =================================================================
+        // WEB AUDIO API ENGINE SYNTHESIZER
+        // =================================================================
+        let audioCtx = null;
+        let engineOsc1 = null;
+        let engineOsc2 = null;
+        let engineGain = null;
+
+        function initAudio() {
+            if (!audioCtx) {
+                const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+                audioCtx = new AudioContextClass();
+            }
+            if (audioCtx.state === 'suspended') audioCtx.resume();
+        }
+
+        function startEngineSound() {
+            try {
+                initAudio();
+                engineOsc1 = audioCtx.createOscillator();
+                engineOsc2 = audioCtx.createOscillator();
+                const filter = audioCtx.createBiquadFilter();
+                engineGain = audioCtx.createGain();
+
+                engineOsc1.type = 'sawtooth';
+                engineOsc2.type = 'triangle';
+
+                const now = audioCtx.currentTime;
+                engineOsc1.frequency.setValueAtTime(34, now);
+                engineOsc1.frequency.exponentialRampToValueAtTime(98, now + 0.35);
+                engineOsc1.frequency.exponentialRampToValueAtTime(52, now + 0.85);
+
+                engineOsc2.frequency.setValueAtTime(68, now);
+                engineOsc2.frequency.exponentialRampToValueAtTime(196, now + 0.35);
+                engineOsc2.frequency.exponentialRampToValueAtTime(104, now + 0.85);
+
+                filter.type = 'lowpass';
+                filter.frequency.setValueAtTime(240, now);
+
+                engineGain.gain.setValueAtTime(0.01, now);
+                engineGain.gain.linearRampToValueAtTime(0.14, now + 0.25);
+                engineGain.gain.linearRampToValueAtTime(0.06, now + 0.9);
+
+                engineOsc1.connect(filter);
+                engineOsc2.connect(filter);
+                filter.connect(engineGain);
+                engineGain.connect(audioCtx.destination);
+
+                engineOsc1.start(now);
+                engineOsc2.start(now);
+            } catch (e) {}
+        }
+
+        function triggerRevSound() {
+            if (!audioCtx || !engineOsc1 || !engineOsc2 || !engineGain) return;
+            const now = audioCtx.currentTime;
+            engineOsc1.frequency.cancelScheduledValues(now);
+            engineOsc2.frequency.cancelScheduledValues(now);
+            engineGain.gain.cancelScheduledValues(now);
+
+            engineOsc1.frequency.setValueAtTime(55, now);
+            engineOsc1.frequency.exponentialRampToValueAtTime(165, now + 0.35);
+            engineOsc1.frequency.exponentialRampToValueAtTime(52, now + 1.2);
+
+            engineOsc2.frequency.setValueAtTime(110, now);
+            engineOsc2.frequency.exponentialRampToValueAtTime(330, now + 0.35);
+            engineOsc2.frequency.exponentialRampToValueAtTime(104, now + 1.2);
+
+            engineGain.gain.setValueAtTime(0.07, now);
+            engineGain.gain.linearRampToValueAtTime(0.18, now + 0.3);
+            engineGain.gain.linearRampToValueAtTime(0.06, now + 1.2);
+        }
+
+        function stopEngineSound() {
+            try {
+                if (engineOsc1) { engineOsc1.stop(); engineOsc1.disconnect(); engineOsc1 = null; }
+                if (engineOsc2) { engineOsc2.stop(); engineOsc2.disconnect(); engineOsc2 = null; }
+            } catch (e) {}
+        }
+
+        // =================================================================
+        // 1. HERO SHOWCASE WITH REAL PHOTOS
+        // =================================================================
+        const HERO_KEYS = ['malibu', 'tracker', 'onix', 'tahoe'];
+
+        function renderHeroThumbnails() {
+            const container = document.getElementById('hero-thumb-cards');
+            container.innerHTML = HERO_KEYS.map(key => {
+                const car = CAR_DATABASE[key];
+                const isActive = key === currentHeroModel;
+                return `
+                <button onclick="selectHeroModel('${key}')" class="group relative rounded-2xl overflow-hidden border-2 text-left transition-all ${isActive ? 'border-chevyGold ring-2 ring-chevyGold/40 scale-[1.02]' : 'border-white/15 hover:border-white/40 opacity-80 hover:opacity-100'}">
+                    <img src="${car.photos.ext}" alt="${car.name}" class="w-full h-24 object-cover group-hover:scale-105 transition duration-500">
+                    <div class=" inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent absolute"></div>
+                    <div class="absolute bottom-2 left-2.5 right-2.5">
+                        <div class="text-[10px] font-bold text-chevyGoldLight uppercase">${car.badge}</div>
+                        <div class="font-display font-bold text-xs text-white truncate">${car.name.replace('Chevrolet ', '')}</div>
+                    </div>
+                </button>
+                `;
+            }).join('');
+        }
+
+        function selectHeroModel(modelKey) {
+            currentHeroModel = modelKey;
+            const car = CAR_DATABASE[modelKey];
+            const img = document.getElementById('hero-main-img');
+            img.src = car.photos.ext;
+            img.alt = car.name;
+
+            document.getElementById('hero-badge').textContent = `${car.badge} • ${car.stockStatus}`;
+            document.getElementById('hero-title').textContent = car.name;
+            document.getElementById('hero-subtitle').textContent = car.tagline;
+            document.getElementById('hero-hp').textContent = `${car.hp} л.с.`;
+            document.getElementById('hero-accel').textContent = `${car.accel} сек`;
+            document.getElementById('hero-fuel').textContent = `${car.fuel} л/100`;
+            document.getElementById('hero-price').textContent = showPrimaryInUSD ? formatUSD(car.basePriceUZS) : formatMillionsUZS(car.basePriceUZS);
+
+            renderHeroThumbnails();
+        }
+
+        function toggleHeroHeadlights() {
+            heroHeadlightsOn = !heroHeadlightsOn;
+            const stage = document.getElementById('hero-photo-stage');
+            const btnText = document.getElementById('headlight-btn-text');
+            if (heroHeadlightsOn) {
+                stage.classList.add('headlights-on');
+                btnText.textContent = 'Выключить LED-фары';
+                showToast('Включена матричная оптика Chevrolet LED', 'info');
+            } else {
+                stage.classList.remove('headlights-on');
+                btnText.textContent = 'Включить LED-фары';
+            }
+        }
+
+        function toggleHeroEngine() {
+            heroEngineRunning = !heroEngineRunning;
+            const img = document.getElementById('hero-main-img');
+            const btnText = document.getElementById('engine-btn-text');
+            const revBtn = document.getElementById('btn-hero-rev');
+
+            if (heroEngineRunning) {
+                startEngineSound();
+                img.classList.add('engine-idle-photo');
+                btnText.textContent = 'Заглушить двигатель';
+                revBtn.classList.remove('opacity-60');
+                if (!heroHeadlightsOn) toggleHeroHeadlights();
+
+                updateHUDRpm(3100);
+                setTimeout(() => { if (heroEngineRunning) updateHUDRpm(850); }, 650);
+
+                rpmInterval = setInterval(() => {
+                    if (heroEngineRunning && !img.classList.contains('engine-rev-photo')) {
+                        updateHUDRpm(820 + Math.floor(Math.random() * 80));
+                    }
+                }, 300);
+                showToast(`Двигатель ${CAR_DATABASE[currentHeroModel].engine} запущен!`, 'success');
+            } else {
+                stopEngineSound();
+                clearInterval(rpmInterval);
+                img.classList.remove('engine-idle-photo', 'engine-rev-photo');
+                btnText.textContent = 'Запустить двигатель (Звук)';
+                revBtn.classList.add('opacity-60');
+                updateHUDRpm(0);
+            }
+        }
+
+        function revHeroEngine() {
+            if (!heroEngineRunning) {
+                toggleHeroEngine();
+                return;
+            }
+            triggerRevSound();
+            const img = document.getElementById('hero-main-img');
+            img.classList.add('engine-rev-photo');
+            updateHUDRpm(6800);
+            setTimeout(() => {
+                img.classList.remove('engine-rev-photo');
+                if (heroEngineRunning) updateHUDRpm(900);
+            }, 950);
+        }
+
+        function updateHUDRpm(rpm) {
+            document.getElementById('hud-rpm').textContent = rpm;
+            document.getElementById('hud-rpm-bar').style.width = Math.min(100, Math.round((rpm / 7500) * 100)) + '%';
+        }
+
+        // =================================================================
+        // 2. FULL 8-MODEL REAL PHOTO CATALOG WITH EXTERIOR/INTERIOR SWITCHER
+        // =================================================================
+        function setCatalogFilter(filter) {
+            activeCatalogFilter = filter;
+            document.querySelectorAll('.catalog-filter-btn').forEach(btn => {
+                if (btn.dataset.filter === filter) {
+                    btn.className = 'catalog-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-uzBlue text-white shadow-sm transition';
+                } else {
+                    btn.className = 'catalog-filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold dealer-card hover:border-uzBlue transition';
+                }
+            });
+            renderCatalog();
+        }
+
+        function switchCardPhoto(carKey, angle, btnEl) {
+            const car = CAR_DATABASE[carKey];
+            const imgEl = document.getElementById(`card-img-${carKey}`);
+            if (imgEl && car.photos[angle]) {
+                imgEl.src = car.photos[angle];
+            }
+            // Update active pill inside this card
+            const parent = btnEl.parentElement;
+            parent.querySelectorAll('button').forEach(b => {
+                b.className = 'px-2.5 py-1 rounded-lg text-[11px] font-bold bg-slate-950/65 text-slate-200 hover:bg-slate-900 transition';
+            });
+            btnEl.className = 'px-2.5 py-1 rounded-lg text-[11px] font-bold bg-uzBlue text-white shadow transition';
+        }
+
+        function tintCatalogCard(carKey, tintCss, colorName) {
+            const overlay = document.getElementById(`card-tint-${carKey}`);
+            const label = document.getElementById(`card-color-label-${carKey}`);
+            if (overlay) {
+                overlay.style.backgroundColor = tintCss;
+                overlay.style.opacity = tintCss === 'transparent' ? '0' : '1';
+            }
+            if (label) {
+                label.textContent = colorName.split(' (')[0];
+            }
+        }
+
+        function renderCatalog() {
+            const searchQuery = (document.getElementById('catalog-search')?.value || '').trim().toLowerCase();
+            const sortBy = document.getElementById('catalog-sort')?.value || 'popular';
+
+            let models = Object.values(CAR_DATABASE).filter(car => {
+                if (activeCatalogFilter === 'sedan' && car.category !== 'sedan') return false;
+                if (activeCatalogFilter === 'suv' && car.category !== 'suv') return false;
+                if (activeCatalogFilter === 'installment' && !car.installment0) return false;
+                if (activeCatalogFilter === 'instock' && !car.inStock) return false;
+                if (searchQuery && !car.name.toLowerCase().includes(searchQuery) && !car.tagline.toLowerCase().includes(searchQuery)) return false;
+                return true;
+            });
+
+            if (sortBy === 'price_asc') models.sort((a, b) => a.basePriceUZS - b.basePriceUZS);
+            if (sortBy === 'price_desc') models.sort((a, b) => b.basePriceUZS - a.basePriceUZS);
+            if (sortBy === 'hp_desc') models.sort((a, b) => b.hp - a.hp);
+
+            const grid = document.getElementById('catalog-grid');
+            if (models.length === 0) {
+                grid.innerHTML = `<div class="col-span-full dealer-card rounded-3xl p-12 text-center text-slate-500">По вашему запросу автомобили не найдены. Попробуйте сбросить фильтр.</div>`;
+                return;
+            }
+
+            grid.innerHTML = models.map(car => {
+                const monthlyEst = Math.round((car.basePriceUZS * 0.7) / 36);
+                return `
+                <div class="dealer-card dealer-card-hover rounded-3xl overflow-hidden flex flex-col justify-between group">
+                    <div>
+                        <!-- Real Car Photo Container with Exterior / Interior Switcher -->
+                        <div class="relative h-52 bg-slate-900 overflow-hidden">
+                            <img id="card-img-${car.key}"
+                                 src="${car.photos.ext}"
+                                 alt="${car.name}"
+                                 onerror="this.src='https://placehold.co/800x500/0f172a/ffffff?text=${encodeURIComponent(car.name)}'"
+                                 class="w-full h-full object-cover car-photo-zoom">
+
+                            <!-- Paint Tint Layer -->
+                            <div id="card-tint-${car.key}" class="absolute inset-0 pointer-events-none mix-blend-color opacity-0 transition-opacity duration-300"></div>
+
+                            <!-- Top Status Badges -->
+                            <div class="absolute top-3 left-3 right-3 flex items-center justify-between gap-1.5">
+                                <span class="px-2.5 py-1 rounded-lg bg-slate-950/80 backdrop-blur-md text-white text-[11px] font-bold">
+                                    ${car.badge}
+                                </span>
+                                ${car.installment0
+                                    ? '<span class="px-2.5 py-1 rounded-lg bg-chevyGold text-slate-950 text-[11px] font-extrabold">Рассрочка 0%</span>'
+                                    : `<span class="px-2.5 py-1 rounded-lg bg-emerald-600/90 text-white text-[11px] font-bold">${car.inStock ? 'В наличии' : 'Под заказ'}</span>`
+                                }
+                            </div>
+
+                            <!-- Interactive Photo Angle Switcher right on the Card -->
+                            <div class="absolute bottom-2.5 left-3 right-3 flex items-center justify-between">
+                                <div class="flex items-center gap-1 backdrop-blur-md p-1 rounded-xl bg-black/40">
+                                    <button onclick="switchCardPhoto('${car.key}', 'ext', this)" class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-uzBlue text-white shadow transition">Кузов</button>
+                                    <button onclick="switchCardPhoto('${car.key}', 'int', this)" class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-slate-950/65 text-slate-200 hover:bg-slate-900 transition">Салон</button>
+                                    <button onclick="switchCardPhoto('${car.key}', 'detail', this)" class="px-2.5 py-1 rounded-lg text-[11px] font-bold bg-slate-950/65 text-slate-200 hover:bg-slate-900 transition">Детали</button>
+                                </div>
+                                <button onclick="openCarDetailModal('${car.key}')" title="Открыть галерею и комплектации" class="w-8 h-8 rounded-xl bg-white/90 hover:bg-white text-slate-900 flex items-center justify-center text-xs shadow">
+                                    <i class="fa-solid fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-5">
+                            <div class="flex items-center justify-between text-[11px] text-slate-400 font-semibold mb-1">
+                                <span>${car.stockStatus}</span>
+                                <span id="card-color-label-${car.key}">Summit White</span>
+                            </div>
+
+                            <h3 class="font-display text-xl font-black text-slate-900 dark:text-white group-hover:text-uzBlue dark:group-hover:text-sky-400 transition">
+                                ${car.name}
+                            </h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 line-clamp-2 leading-relaxed">
+                                ${car.tagline}
+                            </p>
+
+                            <!-- Quick Paint Dots on Card -->
+                            <div class="flex items-center gap-2 mt-3 pt-3 border-t border-slate-100 dark:border-slate-800">
+                                <span class="text-[11px] text-slate-400 font-medium mr-1">Цвета:</span>
+                                ${PAINT_COLORS.slice(0, 5).map(c => `
+                                    <button onclick="tintCatalogCard('${car.key}', '${c.tint}', '${c.name}')"
+                                            title="${c.name}"
+                                            class="w-4 h-4 rounded-full border border-slate-300 dark:border-slate-600 hover:scale-125 transition"
+                                            style="background-color: ${c.hex}"></button>
+                                `).join('')}
+                            </div>
+
+                            <!-- 4 Technical Specs Grid -->
+                            <div class="grid grid-cols-2 gap-2 mt-4 p-3 rounded-2xl bg-slate-50 dark:bg-slate-800/60 text-xs">
+                                <div>
+                                    <span class="text-[10px] text-slate-400 block">Двигатель</span>
+                                    <strong class="font-bold text-slate-700 dark:text-slate-200 truncate block">${car.hp} л.с. • ${car.accel} с</strong>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-slate-400 block">Коробка</span>
+                                    <strong class="font-bold text-slate-700 dark:text-slate-200 truncate block">${car.transmission}</strong>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-slate-400 block">Расход топлива</span>
+                                    <strong class="font-bold text-slate-700 dark:text-slate-200 block">${car.fuel} л/100 км</strong>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-slate-400 block">Багажник / Клиренс</span>
+                                    <strong class="font-bold text-slate-700 dark:text-slate-200 block">${car.trunk} л / ${car.clearance} мм</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer: Price & Actions -->
+                    <div class="px-5 pb-5 pt-2 border-t border-slate-100 dark:border-slate-800">
+                        <div class="flex items-baseline justify-between mb-3">
+                            <div>
+                                <span class="text-[10px] uppercase font-bold text-slate-400 block">Цена от:</span>
+                                <span class="font-display text-lg font-black text-uzBlue dark:text-sky-400">${formatDisplayPrice(car.basePriceUZS)}</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-[10px] text-slate-400 block">В кредит от:</span>
+                                <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400">${formatMillionsUZS(monthlyEst)}/мес</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <button onclick="openCarDetailModal('${car.key}')" class="py-2.5 px-3 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-uzBlue text-xs font-bold transition flex items-center justify-center gap-1.5">
+                                <i class="fa-regular fa-images text-uzBlue dark:text-sky-400"></i> Галерея и цены
+                            </button>
+                            <button onclick="openModelInConfigurator('${car.key}')" class="py-2.5 px-3 rounded-xl bg-uzBlue hover:bg-uzBlueLight text-white text-xs font-bold transition flex items-center justify-center gap-1.5">
+                                <i class="fa-solid fa-sliders"></i> Собрать
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                `;
+            }).join('');
+        }
+
+        // =================================================================
+        // MODAL 1: DETAILED CAR GALLERY & OFFICIAL TRIM TABLE
+        // =================================================================
+        function openCarDetailModal(modelKey) {
+            const car = CAR_DATABASE[modelKey];
+            if (!car) return;
+
+            document.getElementById('detail-modal-badge').textContent = `${car.badge} • ${car.stockStatus}`;
+            document.getElementById('detail-modal-title').textContent = car.name;
+
+            const mainImg = document.getElementById('detail-modal-main-img');
+            const caption = document.getElementById('detail-modal-caption');
+            mainImg.src = car.photos.ext;
+            caption.textContent = `${car.name} — Экстерьер`;
+
+            const angleList = [
+                { key: 'ext', label: 'Экстерьер (Кузов)', url: car.photos.ext },
+                { key: 'int', label: 'Интерьер и Салон', url: car.photos.int },
+                { key: 'detail', label: 'Диски и Оптика', url: car.photos.detail }
+            ];
+
+            document.getElementById('detail-modal-thumbs').innerHTML = angleList.map(a => `
+                <button onclick="document.getElementById('detail-modal-main-img').src='${a.url}'; document.getElementById('detail-modal-caption').textContent='${car.name} — ${a.label}';"
+                        class="relative h-20 lg:h-24 rounded-xl overflow-hidden border-2 border-transparent hover:border-uzBlue focus:border-uzBlue transition group">
+                    <img src="${a.url}" alt="${a.label}" class="w-full h-full object-cover group-hover:scale-105 transition">
+                    <div class="absolute inset-0 bg-black/35 flex items-end p-2">
+                        <span class="text-[11px] font-bold text-white">${a.label}</span>
+                    </div>
+                </button>
+            `).join('');
+
+            // Render Trims Table
+            document.getElementById('detail-modal-trims-body').innerHTML = TRIMS.map(t => {
+                const trimPrice = car.basePriceUZS + t.priceAdd;
+                return `
+                <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition">
+                    <td class="py-3.5 px-4 font-display font-bold">${car.name.replace('Chevrolet ', '')} ${t.name}</td>
+                    <td class="py-3.5 px-4 text-slate-500 dark:text-slate-400">${car.engine} • ${car.transmission}</td>
+                    <td class="py-3.5 px-4 text-slate-600 dark:text-slate-300">${t.desc}</td>
+                    <td class="py-3.5 px-4 text-right font-display font-bold text-uzBlue dark:text-sky-400 whitespace-nowrap">${formatDisplayPrice(trimPrice)}</td>
+                </tr>
+                `;
+            }).join('');
+
+            document.getElementById('detail-modal-cfg-btn').onclick = () => {
+                closeCarDetailModal();
+                openModelInConfigurator(modelKey);
+            };
+            document.getElementById('detail-modal-book-btn').onclick = () => {
+                closeCarDetailModal();
+                openTestDriveModal(modelKey);
+            };
+
+            const modal = document.getElementById('car-detail-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeCarDetailModal() {
+            const modal = document.getElementById('car-detail-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        // =================================================================
+        // 3. PHOTO-BASED STUDIO CONFIGURATOR
+        // =================================================================
+        function initConfigurator() {
+            // Render 8 Model Buttons with Thumbnail Photos
+            document.getElementById('config-model-buttons').innerHTML = Object.values(CAR_DATABASE).map(car => `
+                <button onclick="selectConfigModel('${car.key}')" id="cfg-model-${car.key}" class="p-2 rounded-2xl text-left dealer-card hover:border-uzBlue transition overflow-hidden">
+                    <img src="${car.photos.ext}" alt="${car.name}" class="w-full h-14 object-cover rounded-xl mb-1.5">
+                    <div class="font-display font-bold text-xs truncate px-1">${car.name.replace('Chevrolet ', '')}</div>
+                    <div class="text-[10px] text-uzBlue dark:text-sky-400 font-bold px-1">${formatMillionsUZS(car.basePriceUZS)}</div>
+                </button>
+            `).join('');
+
+            // Render Paint Swatches
+            document.getElementById('color-swatches-container').innerHTML = PAINT_COLORS.map(color => `
+                <button onclick="selectConfigColor('${color.id}')" id="cfg-color-${color.id}" title="${color.name}"
+                        class="w-10 h-10 rounded-2xl border-2 border-slate-300 dark:border-slate-600 transition transform hover:scale-110 flex items-center justify-center shadow-sm"
+                        style="background-color: ${color.hex}">
+                    <i class="fa-solid fa-check text-xs ${color.id === 'white' || color.id === 'silver' ? 'text-slate-900' : 'text-white'} opacity-0 check-icon"></i>
+                </button>
+            `).join('');
+
+            // Render Trims
+            document.getElementById('trim-buttons-container').innerHTML = TRIMS.map(trim => `
+                <button onclick="selectConfigTrim('${trim.id}')" id="cfg-trim-${trim.id}" class="p-3 rounded-xl text-left dealer-card hover:border-uzBlue transition">
+                    <div class="flex items-center justify-between">
+                        <span class="font-display font-bold text-xs sm:text-sm">${trim.name}</span>
+                        <span class="text-[11px] font-bold text-chevyGold">${trim.priceAdd === 0 ? 'База' : '+' + (trim.priceAdd / 1000000) + ' млн'}</span>
+                    </div>
+                    <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1 line-clamp-1">${trim.desc}</p>
+                </button>
+            `).join('');
+
+            // Render Wheels
+            document.getElementById('wheel-buttons-container').innerHTML = WHEELS.map(w => `
+                <button onclick="selectConfigWheel('${w.id}')" id="cfg-wheel-${w.id}" class="p-3 rounded-xl text-left dealer-card hover:border-uzBlue transition">
+                    <div class="font-bold text-xs truncate">${w.name}</div>
+                    <div class="text-[10px] text-slate-500 mt-0.5">${w.priceAdd === 0 ? 'В базовой комплектации' : '+' + (w.priceAdd / 1000000) + ' млн сум'}</div>
+                </button>
+            `).join('');
+
+            // Render Extras
+            document.getElementById('extra-options-container').innerHTML = EXTRA_PACKAGES.map(pkg => `
+                <label class="flex items-center justify-between p-3 rounded-xl dealer-card cursor-pointer hover:border-uzBlue transition">
+                    <div class="flex items-center gap-2.5 pr-2">
+                        <input type="checkbox" ${configState.extras.includes(pkg.id) ? 'checked' : ''} onchange="toggleConfigExtra('${pkg.id}')" class="w-4 h-4 accent-uzBlue rounded">
+                        <span class="text-xs font-medium">${pkg.name}</span>
+                    </div>
+                    <span class="text-xs font-bold text-uzBlue dark:text-sky-400 whitespace-nowrap">+${(pkg.price / 1000000).toFixed(1)} млн</span>
+                </label>
+            `).join('');
+
+            updateConfiguratorUI();
+        }
+
+        function setConfiguratorAngle(angle) {
+            configState.angle = angle;
+            ['ext', 'int', 'detail'].forEach(a => {
+                const btn = document.getElementById(`cfg-angle-${a}`);
+                if (btn) {
+                    btn.className = a === angle
+                        ? 'px-4 py-2 rounded-xl text-xs font-bold bg-uzBlue text-white transition'
+                        : 'px-4 py-2 rounded-xl text-xs font-bold text-slate-600 dark:text-slate-300 hover:text-uzBlue transition';
+                }
+            });
+            updateConfiguratorUI();
+        }
+
+        function selectConfigModel(modelKey) { configState.modelKey = modelKey; updateConfiguratorUI(); }
+        function selectConfigColor(colorId) { configState.colorId = colorId; updateConfiguratorUI(); }
+        function selectConfigTrim(trimId) { configState.trimId = trimId; updateConfiguratorUI(); }
+        function selectConfigWheel(wheelId) { configState.wheelId = wheelId; updateConfiguratorUI(); }
+        function toggleConfigExtra(extraId) {
+            const idx = configState.extras.indexOf(extraId);
+            if (idx > -1) configState.extras.splice(idx, 1);
+            else configState.extras.push(extraId);
+            updateConfiguratorUI();
+        }
+
+        function calculateConfiguratorTotal() {
+            const car = CAR_DATABASE[configState.modelKey];
+            const color = PAINT_COLORS.find(c => c.id === configState.colorId);
+            const trim = TRIMS.find(t => t.id === configState.trimId);
+            const wheel = WHEELS.find(w => w.id === configState.wheelId);
+            const extrasSum = configState.extras.reduce((acc, id) => {
+                const item = EXTRA_PACKAGES.find(e => e.id === id);
+                return acc + (item ? item.price : 0);
+            }, 0);
+            return car.basePriceUZS + color.priceAdd + trim.priceAdd + wheel.priceAdd + extrasSum;
+        }
+
+        function updateConfiguratorUI() {
+            const car = CAR_DATABASE[configState.modelKey];
+            const color = PAINT_COLORS.find(c => c.id === configState.colorId);
+            const trim = TRIMS.find(t => t.id === configState.trimId);
+            const wheel = WHEELS.find(w => w.id === configState.wheelId);
+            const totalUZS = calculateConfiguratorTotal();
+
+            // Active Model Button
+            Object.keys(CAR_DATABASE).forEach(k => {
+                const btn = document.getElementById(`cfg-model-${k}`);
+                if (btn) {
+                    btn.className = k === configState.modelKey
+                        ? 'p-2 rounded-2xl text-left bg-uzBlue/10 border-2 border-uzBlue transition overflow-hidden shadow-sm'
+                        : 'p-2 rounded-2xl text-left dealer-card hover:border-uzBlue transition overflow-hidden';
+                }
+            });
+
+            // Active Color Swatch
+            PAINT_COLORS.forEach(c => {
+                const btn = document.getElementById(`cfg-color-${c.id}`);
+                if (!btn) return;
+                const icon = btn.querySelector('.check-icon');
+                if (c.id === configState.colorId) {
+                    btn.classList.add('ring-4', 'ring-uzBlue/40', 'scale-110');
+                    icon.classList.remove('opacity-0');
+                } else {
+                    btn.classList.remove('ring-4', 'ring-uzBlue/40', 'scale-110');
+                    icon.classList.add('opacity-0');
+                }
+            });
+
+            // Active Trim & Wheel
+            TRIMS.forEach(t => {
+                const btn = document.getElementById(`cfg-trim-${t.id}`);
+                if (btn) btn.className = t.id === configState.trimId ? 'p-3 rounded-xl text-left bg-uzBlue/10 border-2 border-uzBlue transition' : 'p-3 rounded-xl text-left dealer-card hover:border-uzBlue transition';
+            });
+            WHEELS.forEach(w => {
+                const btn = document.getElementById(`cfg-wheel-${w.id}`);
+                if (btn) btn.className = w.id === configState.wheelId ? 'p-3 rounded-xl text-left bg-uzBlue/10 border-2 border-uzBlue transition' : 'p-3 rounded-xl text-left dealer-card hover:border-uzBlue transition';
+            });
+
+            // Update Photo & Paint Tint
+            const photoEl = document.getElementById('config-main-photo');
+            photoEl.src = car.photos[configState.angle] || car.photos.ext;
+
+            const paintOverlay = document.getElementById('config-paint-overlay');
+            if (configState.angle === 'ext' && color.tint !== 'transparent') {
+                paintOverlay.style.backgroundColor = color.tint;
+                paintOverlay.style.opacity = '1';
+            } else {
+                paintOverlay.style.opacity = '0';
+            }
+
+            const angleCaptions = {
+                ext: `Экстерьер • ${color.name}`,
+                int: `Интерьер и мультимедиа салона • Комплектация ${trim.name}`,
+                detail: `Легкосплавные диски ${wheel.name} и LED оптика`
+            };
+            document.getElementById('config-photo-caption').textContent = angleCaptions[configState.angle];
+
+            // Update Labels & Totals
+            document.getElementById('config-trim-badge').textContent = trim.name.toUpperCase();
+            document.getElementById('config-color-badge').textContent = `Цвет: ${color.name}`;
+            document.getElementById('selected-color-name').textContent = color.name.split(' (')[0];
+            document.getElementById('config-car-name').textContent = car.name;
+            document.getElementById('config-total-uzs').textContent = formatDisplayPrice(totalUZS);
+            document.getElementById('config-total-usd').textContent = showPrimaryInUSD ? formatUZS(totalUZS) : `≈ ${formatUSD(totalUZS)} USD`;
+
+            document.getElementById('config-spec-engine').textContent = `${car.engine} (${car.hp} л.с.)`;
+            document.getElementById('config-spec-trans').textContent = car.transmission;
+            document.getElementById('config-spec-fuel').textContent = `${car.fuel} л / ${car.accel} сек`;
+            document.getElementById('config-spec-trunk').textContent = `${car.trunk} литров`;
+            document.getElementById('config-summary-line').textContent = `${car.name} • ${trim.name} • ${color.name.split(' (')[0]} • ${wheel.name}`;
+        }
+
+        function openModelInConfigurator(modelKey) {
+            selectConfigModel(modelKey);
+            document.getElementById('configurator').scrollIntoView({ behavior: 'smooth' });
+            showToast(`Модель ${CAR_DATABASE[modelKey].name} открыта в фото-конфигураторе`, 'info');
+        }
+
+        function sendConfigToCalculator() {
+            const total = calculateConfiguratorTotal();
+            document.getElementById('calc-price-slider').value = total;
+            document.getElementById('calc-car-photo').src = CAR_DATABASE[configState.modelKey].photos.ext;
+            updateCreditCalculator();
+            document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+            showToast('Ваша конфигурация передана в кредитный калькулятор', 'success');
+        }
+
+        // =================================================================
+        // 4. CREDIT & TRADE-IN CALCULATOR
+        // =================================================================
+        function initCalculator() {
+            const select = document.getElementById('calc-model-select');
+            select.innerHTML = Object.values(CAR_DATABASE).map(car =>
+                `<option value="${car.key}">${car.name} — от ${formatUZS(car.basePriceUZS)}</option>`
+            ).join('');
+            select.value = 'onix';
+            updateCreditCalculator();
+        }
+
+        function onCalcModelSelect(modelKey) {
+            const car = CAR_DATABASE[modelKey];
+            if (!car) return;
+            document.getElementById('calc-price-slider').value = car.basePriceUZS;
+            document.getElementById('calc-car-photo').src = car.photos.ext;
+            updateCreditCalculator();
+        }
+
+        function applyFinancePreset(rate, downPct, termMonths) {
+            document.getElementById('calc-rate-slider').value = rate;
+            document.getElementById('calc-down-slider').value = downPct;
+            document.getElementById('calc-term-slider').value = termMonths;
+            updateCreditCalculator();
+            showToast(`Выбрана программа: ставка ${rate}%, взнос ${downPct}%, срок ${termMonths} мес.`, 'info');
+        }
+
+        function updateCreditCalculator() {
+            const price = Number(document.getElementById('calc-price-slider').value);
+            const downPct = Number(document.getElementById('calc-down-slider').value);
+            const term = Number(document.getElementById('calc-term-slider').value);
+            const annualRate = Number(document.getElementById('calc-rate-slider').value);
+            const tradeInEnabled = document.getElementById('calc-tradein-toggle').checked;
+            const tradeInBox = document.getElementById('calc-tradein-box');
+
+            tradeInBox.classList.toggle('hidden', !tradeInEnabled);
+            const tradeInValue = tradeInEnabled ? Number(document.getElementById('calc-tradein-slider').value) : 0;
+
+            const cashDownPayment = Math.round(price * (downPct / 100));
+            const principal = Math.max(10000000, price - cashDownPayment - tradeInValue);
+
+            let monthlyPayment = 0;
+            if (annualRate === 0) {
+                monthlyPayment = Math.round(principal / term);
+            } else {
+                const monthlyRate = annualRate / 12 / 100;
+                monthlyPayment = Math.round(
+                    (principal * monthlyRate * Math.pow(1 + monthlyRate, term)) /
+                    (Math.pow(1 + monthlyRate, term) - 1)
+                );
+            }
+
+            const totalLoanPaid = monthlyPayment * term;
+            const totalInterest = Math.max(0, totalLoanPaid - principal);
+            const grandTotal = cashDownPayment + tradeInValue + totalLoanPaid;
+
+            document.getElementById('calc-price-display').textContent = formatDisplayPrice(price);
+            document.getElementById('calc-tradein-display').textContent = formatDisplayPrice(tradeInValue);
+            document.getElementById('calc-down-pct').textContent = downPct + '%';
+            document.getElementById('calc-down-amount').textContent = formatDisplayPrice(cashDownPayment);
+            document.getElementById('calc-term-display').textContent = `${term} мес (${(term / 12).toFixed(1).replace('.0', '')} г.)`;
+            document.getElementById('calc-rate-display').textContent = annualRate === 0 ? '0% (Рассрочка)' : annualRate + '%';
+
+            document.getElementById('calc-monthly-payment').textContent = formatDisplayPrice(monthlyPayment);
+            document.getElementById('calc-monthly-usd').textContent = `≈ ${formatUSD(monthlyPayment)} USD / месяц`;
+            document.getElementById('calc-loan-principal').textContent = formatDisplayPrice(principal);
+            document.getElementById('calc-tradein-summary').textContent = tradeInEnabled ? '-' + formatDisplayPrice(tradeInValue) : 'Не выбран';
+            document.getElementById('calc-total-interest').textContent = formatDisplayPrice(totalInterest);
+            document.getElementById('calc-grand-total').textContent = formatDisplayPrice(grandTotal);
+
+            const principalRatio = Math.round((price / grandTotal) * 100);
+            document.getElementById('donut-center-label').textContent = (100 - downPct) + '%';
+            document.getElementById('bar-principal').style.width = principalRatio + '%';
+            document.getElementById('bar-interest').style.width = (100 - principalRatio) + '%';
+        }
+
+        // =================================================================
+        // 5. SIDE-BY-SIDE PHOTO COMPARISON
+        // =================================================================
+        function initComparisonTool() {
+            const selectA = document.getElementById('comp-select-a');
+            const selectB = document.getElementById('comp-select-b');
+            const optionsHTML = Object.values(CAR_DATABASE).map(c => `<option value="${c.key}">${c.name}</option>`).join('');
+            selectA.innerHTML = optionsHTML;
+            selectB.innerHTML = optionsHTML;
+            selectA.value = 'tracker';
+            selectB.value = 'onix';
+            updateComparison();
+        }
+
+        function updateComparison() {
+            const carA = CAR_DATABASE[document.getElementById('comp-select-a').value];
+            const carB = CAR_DATABASE[document.getElementById('comp-select-b').value];
+
+            document.getElementById('comp-badge-a').textContent = carA.badge;
+            document.getElementById('comp-badge-b').textContent = carB.badge;
+            document.getElementById('comp-photo-a').src = carA.photos.ext;
+            document.getElementById('comp-photo-b').src = carB.photos.ext;
+            document.getElementById('comp-price-a').textContent = formatDisplayPrice(carA.basePriceUZS);
+            document.getElementById('comp-price-b').textContent = formatDisplayPrice(carB.basePriceUZS);
+
+            const metrics = [
+                { label: 'Мощность двигателя', unit: 'л.с.', valA: carA.hp, valB: carB.hp, max: 350, higherIsBetter: true },
+                { label: 'Динамика разгона 0–100 км/ч', unit: 'сек', valA: carA.accel, valB: carB.accel, max: 14, higherIsBetter: false },
+                { label: 'Расход топлива (смешанный)', unit: 'л/100 км', valA: carA.fuel, valB: carB.fuel, max: 14, higherIsBetter: false },
+                { label: 'Объем багажного отделения', unit: 'литров', valA: carA.trunk, valB: carB.trunk, max: 750, higherIsBetter: true },
+                { label: 'Дорожный просвет (Клиренс)', unit: 'мм', valA: carA.clearance, valB: carB.clearance, max: 245, higherIsBetter: true }
+            ];
+
+            document.getElementById('comparison-metrics-container').innerHTML = metrics.map(m => {
+                const pctA = Math.min(100, Math.round((m.valA / m.max) * 100));
+                const pctB = Math.min(100, Math.round((m.valB / m.max) * 100));
+                const winA = m.higherIsBetter ? m.valA >= m.valB : m.valA <= m.valB;
+                const winB = m.higherIsBetter ? m.valB >= m.valA : m.valB <= m.valA;
+
+                return `
+                <div class="space-y-2">
+                    <div class="flex justify-between items-center text-xs sm:text-sm">
+                        <span class="font-display font-bold ${winA ? 'text-uzBlue dark:text-sky-400' : 'text-slate-400'}">
+                            ${m.valA} ${m.unit} ${winA ? '<i class="fa-solid fa-trophy text-chevyGold ml-1"></i>' : ''}
+                        </span>
+                        <span class="font-bold uppercase tracking-wider text-xs text-slate-500">${m.label}</span>
+                        <span class="font-display font-bold ${winB ? 'text-amber-600 dark:text-amber-400' : 'text-slate-400'}">
+                            ${winB ? '<i class="fa-solid fa-trophy text-chevyGold mr-1"></i>' : ''} ${m.valB} ${m.unit}
+                        </span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="h-2.5 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden flex justify-end">
+                            <div class="h-full bg-uzBlue rounded-full transition-all duration-500" style="width: ${pctA}%"></div>
+                        </div>
+                        <div class="h-2.5 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+                            <div class="h-full bg-chevyGold rounded-full transition-all duration-500" style="width: ${pctB}%"></div>
+                        </div>
+                    </div>
+                </div>
+                `;
+            }).join('');
+        }
+
+        // =================================================================
+        // 6. UZAUTO SAVDO CONTRACT TRACKER
+        // =================================================================
+        const DEMO_CONTRACTS = {
+            'UZ-2026-84920': {
+                model: 'Chevrolet Onix Premier Turbo (Summit White)',
+                vin: 'XWBJA6959PA084920',
+                step: 5,
+                dealer: 'Сергели Автотеххизмат (г. Ташкент)',
+                eta: 'Автомобиль прошел предпродажную подготовку и готов к выдаче'
+            },
+            'UZ-2026-51039': {
+                model: 'Chevrolet Tracker Redline (Black Meet Kettle)',
+                vin: 'XWBTR4820PA051039',
+                step: 4,
+                dealer: 'Nurafshon Avtocentr (Автосалон Рохат)',
+                eta: 'Отгружен на автовоз, прибытие в Ташкент через 2 дня'
+            },
+            'UZ-2026-99412': {
+                model: 'Chevrolet Cobalt LTZ АКПП (Switchblade Silver)',
+                vin: 'XWBCO1592PA099412',
+                step: 3,
+                dealer: 'Асака Автоцентр (Яккасарай)',
+                eta: 'Сборочный конвейер и контроль качества GM (Завод Асака)'
+            }
+        };
+
+        function fillDemoContract(code) {
+            document.getElementById('contract-input').value = code;
+            checkContractStatus();
+        }
+
+        function checkContractStatus() {
+            const rawCode = document.getElementById('contract-input').value.trim().toUpperCase();
+            const data = DEMO_CONTRACTS[rawCode] || {
+                model: 'Chevrolet Tracker Premier (По договору UzAuto Savdo)',
+                vin: 'XWBGM2026UZ' + Math.floor(100000 + Math.random() * 899999),
+                step: 3,
+                dealer: 'Официальный дилерский центр Ташкент',
+                eta: 'Плановая сборка на заводе UzAuto Motors'
+            };
+
+            const steps = [
+                'Договор UzAuto Savdo',
+                'Цех окраски (Асака)',
+                'Конвейер и ОТК GM',
+                'Доставка в Ташкент',
+                'Выдача в салоне'
+            ];
+
+            document.getElementById('contract-result-box').innerHTML = `
+                <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-200 dark:border-slate-700">
+                    <div>
+                        <span class="text-xs text-slate-400">Контракт: <strong class="font-mono text-slate-900 dark:text-white">${rawCode}</strong></span>
+                        <h4 class="font-display font-bold text-base text-uzBlue dark:text-sky-400 mt-0.5">${data.model}</h4>
+                    </div>
+                    <span class="px-3 py-1 rounded-lg bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 text-xs font-mono font-bold">VIN: ${data.vin}</span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-5 gap-2">
+                    ${steps.map((label, idx) => {
+                        const stepNum = idx + 1;
+                        const completed = stepNum <= data.step;
+                        return `
+                        <div class="p-2.5 rounded-xl border ${completed ? 'border-emerald-500/40 bg-emerald-500/10' : 'border-slate-200 dark:border-slate-700'} text-center">
+                            <div class="w-6 h-6 mx-auto rounded-full flex items-center justify-center text-xs font-bold mb-1 ${completed ? 'bg-emerald-500 text-white' : 'bg-slate-200 dark:bg-slate-700 text-slate-500'}">
+                                ${completed ? '<i class="fa-solid fa-check"></i>' : stepNum}
+                            </div>
+                            <div class="text-[11px] font-semibold leading-tight">${label}</div>
+                        </div>
+                        `;
+                    }).join('')}
+                </div>
+                <div class="flex flex-wrap items-center justify-between gap-2 pt-2 text-xs">
+                    <span>Дилер получения: <strong>${data.dealer}</strong></span>
+                    <span class="text-amber-600 dark:text-amber-400 font-bold"><i class="fa-solid fa-clock mr-1"></i>${data.eta}</span>
+                </div>
+            `;
+        }
+
+        // =================================================================
+        // 7. THEME, CURRENCY, TEST DRIVE MODAL & TOASTS
+        // =================================================================
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById('theme-icon');
+            html.classList.toggle('dark');
+            if (html.classList.contains('dark')) {
+                icon.className = 'fa-solid fa-sun text-base';
+                showToast('Включен ночной режим шоурума', 'info');
+            } else {
+                icon.className = 'fa-solid fa-moon text-base';
+                showToast('Включен светлый дневной режим шоурума', 'info');
+            }
+        }
+
+        function toggleCurrencyDisplay() {
+            showPrimaryInUSD = !showPrimaryInUSD;
+            document.getElementById('currency-label').textContent = showPrimaryInUSD ? 'USD ($)' : 'UZS (Сум)';
+            selectHeroModel(currentHeroModel);
+            renderCatalog();
+            updateConfiguratorUI();
+            updateCreditCalculator();
+            updateComparison();
+            showToast(`Цены отображаются в ${showPrimaryInUSD ? 'долларах США (USD)' : 'узбекских сумах (UZS)'}`, 'info');
+        }
+
+        function toggleMobileMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+
+        function openTestDriveModal(modelKey = null, isContractOrder = false, dealerName = null) {
+            const modal = document.getElementById('booking-modal');
+            const modelSelect = document.getElementById('modal-model-select');
+            const dealerSelect = document.getElementById('modal-dealer-select');
+
+            modelSelect.innerHTML = Object.values(CAR_DATABASE).map(c => `<option value="${c.name}">${c.name}</option>`).join('');
+            if (modelKey && CAR_DATABASE[modelKey]) {
+                modelSelect.value = CAR_DATABASE[modelKey].name;
+            }
+            if (dealerName) {
+                for (let i = 0; i < dealerSelect.options.length; i++) {
+                    if (dealerSelect.options[i].value.includes(dealerName)) {
+                        dealerSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+            document.getElementById('modal-title').textContent = isContractOrder ? 'ОНЛАЙН-ЗАЯВКА НА ДОГОВОР / КРЕДИТ' : 'ЗАПИСЬ НА ТЕСТ-ДРАЙВ';
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function closeTestDriveModal() {
+            const modal = document.getElementById('booking-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function submitBookingForm(e) {
+            e.preventDefault();
+            const name = document.getElementById('modal-user-name').value;
+            const model = document.getElementById('modal-model-select').value;
+            const dealer = document.getElementById('modal-dealer-select').value;
+            closeTestDriveModal();
+            showToast(`Спасибо, ${name}! Заявка на ${model} в «${dealer}» принята. Код брони: #UZ-${Math.floor(1000 + Math.random() * 9000)}`, 'success');
+        }
+
+        function showToast(message, type = 'info') {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = `dealer-card border-l-4 ${type === 'success' ? 'border-l-emerald-500' : 'border-l-uzBlue'} p-4 rounded-2xl shadow-xl flex items-start gap-3 pointer-events-auto transition-all duration-300`;
+            toast.innerHTML = `
+                <i class="fa-solid ${type === 'success' ? 'fa-circle-check text-emerald-500' : 'fa-circle-info text-uzBlue dark:text-sky-400'} text-lg mt-0.5"></i>
+                <div class="text-xs sm:text-sm font-semibold leading-snug">${message}</div>
+            `;
+            container.appendChild(toast);
+            setTimeout(() => toast.remove(), 4200);
+        }
+
+        window.onload = function () {
+            selectHeroModel('malibu');
+            renderCatalog();
+            initConfigurator();
+            initCalculator();
+            initComparisonTool();
+            checkContractStatus();
+        };
+    </script>
+</body>
+</html>
